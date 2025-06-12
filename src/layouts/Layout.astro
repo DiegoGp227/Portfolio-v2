@@ -1,0 +1,23 @@
+---
+import style from "./style.module.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="/img/icons.png" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Diego Gongora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Finlandica:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class={style.body}>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.titleOne {
+    color: aliceblue;
+}
+
+.titleTwo {
+    color: blueviolet;
+}
+
+.p {
+  width: 80%;
+  color: aliceblue;
+  text-align: center;
+}

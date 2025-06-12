@@ -1,0 +1,20 @@
+.button {
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+.a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 6px 12px;
+  background-color: #23013c;
+  border: 2px solid #23013c;
+  border-radius: 5px;
+  color: aliceblue;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.a:hover {
+  scale: 1.2;
+  border: 2px solid blueviolet;
+}
