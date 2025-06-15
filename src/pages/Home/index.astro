@@ -1,0 +1,20 @@
+---
+import DivText from "../../Components/Home/DivText/index.astro";
+import DivTecnologies from "../../Components/Home/DivTecnologies/index.astro";
+import SubNav from "../../Components/Home/SubNav/index.astro";
+import NetworksButtons from "../../Components/Home/NetworksButtons/index.astro";
+import DivGif from "../../Components/Home/DivGif/index.astro";
+import style from "./style.module.css";
+---
+
+<main class={style.main}>
+  <div class={style.divInfo}>
+    <DivText />
+    <DivTecnologies />
+    <SubNav />
+    <NetworksButtons />
+  </div>
+  <div class={style.divImg}>
+    <DivGif/>
+  </div>
+</main>
