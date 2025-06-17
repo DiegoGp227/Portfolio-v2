@@ -1,0 +1,14 @@
+.secction {
+    width: 40vw;
+}
+
+.img {
+    width: 340px;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+    box-shadow:
+    0 0 5px blueviolet,
+    0 0 10px blueviolet,
+    0 0 20px blueviolet,
+    0 0 40px blueviolet;
+}

@@ -1,8 +1,12 @@
+.nav {
+    display: flex;
+    gap: 10px;
+}
+
 .button {
     color: aliceblue;
     background-color: transparent;
     padding: 7px 10px;
-    margin: 0 5px;
     cursor: pointer;
     border: 2px solid blueviolet;
     border-radius: 5px;

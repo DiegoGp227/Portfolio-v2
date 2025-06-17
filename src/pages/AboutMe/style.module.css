@@ -1,11 +1,25 @@
 .main {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.divOne {
+  height: 30vh;
+  display: flex;
+  align-items: end;
+}
+
+.divTwo {
+  margin-top: 30px;
+  height: 70vh;
+  width: 1200px;
+  display: flex;
 }

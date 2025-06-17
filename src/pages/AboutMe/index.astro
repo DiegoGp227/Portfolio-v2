@@ -1,13 +1,21 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import TitleDiv from "../../Components/AboutMe/TitleDiv/index.astro";
+import InfoDiv from "../../Components/AboutMe/InfoDiv/index.astro";
+import ProfileImg from "../../Components/AboutMe/ProfileImg/index.astro";
+import Header from "../../Components/Header/index.astro";
 import style from "./style.module.css";
 ---
-<Layout>
-<main class={style.main}>
-  <div class="">
-    <h1>Sobre mi</h1>
-    <p>Desarrollador de aplicaciones webs</p>
-  </div>
-</main>
 
+<Layout>
+  <Header />
+  <main class={style.main}>
+    <div class={style.divOne}>
+      <TitleDiv />
+    </div>
+    <div class={style.divTwo}>
+      <InfoDiv />
+      <ProfileImg />
+    </div>
+  </main>
 </Layout>

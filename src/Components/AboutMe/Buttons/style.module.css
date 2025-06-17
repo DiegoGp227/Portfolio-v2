@@ -1,0 +1,22 @@
+.div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.buttons {
+  padding: 7px 10px;
+  /* font-size: 15px; */
+  background-color: #0a0522;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  gap: 5px;
+}
+
+.buttons:hover {
+  scale: 1.2;
+  background-color: blueviolet;
+}

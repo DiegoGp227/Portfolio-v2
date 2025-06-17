@@ -9,5 +9,9 @@ export default defineConfig({
         '@': path.resolve('./puclic'), 
       },
     },
+    server: {
+      host: true,
+      allowedHosts: ['2645-190-25-164-252.ngrok-free.app'], // <- tu URL de ngrok
+    },
   },
 });
