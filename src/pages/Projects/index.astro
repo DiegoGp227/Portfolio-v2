@@ -1,0 +1,63 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../Components/Header/index.astro";
+import ProjectsDiv from "../../Components/Projects/ProjectsDiv/index.astro";
+import style from "./style.module.css";
+
+import { Tabs } from "webcoreui/astro";
+
+const items = [
+  {
+    label: "Introduction",
+    value: "intro",
+    active: true,
+  },
+  {
+    label: "Setup",
+    value: "setup",
+  },
+  {
+    label: "Conclusion",
+    value: "conclusion",
+  },
+];
+---
+
+<Layout>
+  <Header />
+  <main class={style.main}>
+    <div class={style.divOne}>
+      <h1 class={style.title}>Habilidades y Proyectos</h1>
+      <p class={style.text}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem earum
+        atque, dolorem rerum cum unde vitae vel nesciunt doloremque nulla
+        quibusdam! Ipsa sapiente dolor perspiciatis dicta consectetur quibusdam
+        odit animi.
+      </p>
+    </div>
+    <div class={style.divTwo}>
+      <Tabs items={items} theme="boxed" className={style.tabs} even={true}>
+        <div data-tab="intro" data-active="true" class={style.divProjects}>
+          <ProjectsDiv
+            class={style.project}
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          />
+          <ProjectsDiv
+            class={style.project}
+            src="/Assets/Next-Strapper.jpeg"
+            title="Next-Strapper"
+            text="lorem ipsum solor sit amet"
+          />
+          <ProjectsDiv
+            class={style.project}
+            src="/Assets/Time-Track.png"
+            title="Time-Track"
+            text="lorem ipsum solor sit amet"
+          />
+        </div>
+      </Tabs>
+    </div>
+  </main>
+</Layout>

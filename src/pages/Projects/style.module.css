@@ -1,0 +1,49 @@
+.main {
+  width: 100vw;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.divOne {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh;
+  max-width: 700px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.title {
+  color: aliceblue;
+  font-size: 50px;
+}
+
+.text {
+  color: aliceblue;
+  text-align: center;
+}
+
+.divTwo {
+  height: 70vh;
+  overflow-y: auto; 
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tabs {
+  color: red;
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.divProjects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
