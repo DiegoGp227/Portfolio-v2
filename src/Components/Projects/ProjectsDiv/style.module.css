@@ -1,0 +1,47 @@
+.cardDiv {
+  width: 250px;
+  height: 250px;
+  padding: 10px;
+  background-color: #1f0031;
+  /* margin: 20px; */
+  border-radius: 5px;
+}
+
+.imgDiv {
+  height: 114px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.mainDiv {
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.titleCard{
+  color: aliceblue;
+}
+
+.textCard {
+  color: aliceblue;
+}
+
+.buttonInfo {
+  width: 100%;
+  padding: 5px;
+  background-color: #1f0031;
+  border: 2px solid blueviolet;
+  color: blueviolet;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.buttonInfo:hover {
+    background-color: blueviolet;
+    color: aliceblue;
+}

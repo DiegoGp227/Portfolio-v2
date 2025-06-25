@@ -1,0 +1,23 @@
+/* transform: scale(1.2);
+  filter: brightness(1.2); */
+
+.svgDiv {
+    width: 80px;
+    text-align: center;
+}
+.svg {
+    width: 60px;
+    height: 60px;
+    transition: 0.5s;
+}
+
+.svg:hover {
+    scale: 1.2;
+    filter: brightness(1.2);
+}
+
+.p {
+    font-size: 20px;
+    color: aliceblue;
+    margin: auto;
+}

@@ -1,0 +1,120 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../Components/Header/index.astro";
+import ProjectsDiv from "../../Components/Projects/ProjectsDiv/index.astro";
+import TechnologiesDiv from "../../Components/Projects/technologiesDiv/index.astro";
+import style from "./style.module.css";
+
+import { Tabs } from "webcoreui/astro";
+
+const items = [
+  {
+    label: "Proyectos",
+    value: "projects",
+    active: true,
+  },
+  {
+    label: "Certificados",
+    value: "certificates",
+  },
+  {
+    label: "Tecnologias",
+    value: "technologies",
+  },
+];
+---
+
+<Layout>
+  <Header />
+  <main class={style.main}>
+    <div class={style.divOne}>
+      <h1 class={style.title}>Habilidades y Proyectos</h1>
+      <p class={style.text}>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem earum
+        atque, dolorem rerum cum unde vitae vel nesciunt doloremque nulla
+        quibusdam! Ipsa sapiente dolor perspiciatis dicta consectetur quibusdam
+        odit animi.
+      </p>
+    </div>
+    <div class={style.divTwo}>
+      <div class={style.sliderDiv}>
+        <nav>
+          <ul class={style.ulNav}>
+            <li class={style.liNav}>Proyectos</li>
+            <li class={style.liNav}>Diseños</li>
+            <li class={style.liNav}>Tecnologias</li>
+          </ul>
+        </nav>
+        <div class={style.containerProjects}>
+          <TechnologiesDiv title="Html"/>
+          <TechnologiesDiv title="Css"/>
+          <TechnologiesDiv title="Javascript"/>
+          <TechnologiesDiv title="Astro"/>
+          <TechnologiesDiv title="React.js"/>
+          <TechnologiesDiv title="Node.js"/>
+          <TechnologiesDiv title="Express"/>
+          <TechnologiesDiv title="Mysql"/>
+          <TechnologiesDiv title="Figma"/>
+          <TechnologiesDiv title="Github"/>
+          <TechnologiesDiv title="Slack"/>
+          
+<!-- 
+            <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          />
+            <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          />
+            <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          />
+            <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          />
+            <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          />
+            <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          /> -->
+          
+        </div>
+      </div>
+      <!-- <Tabs items={items} theme="boxed" className={style.tabs} even={true}> -->
+      <!-- <div data-tab="projects" data-active="true" class={style.divProjects}>
+          <TechnologiesDiv svg="" />
+        </div>
+        <div data-tab="certificates" class={style.divCertificates}>
+          <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          />
+          <ProjectsDiv
+            src="/Assets/Next-Strapper.jpeg"
+            title="Next-Strapper"
+            text="lorem ipsum solor sit amet"
+          />
+          <ProjectsDiv
+            src="/Assets/Time-Track.png"
+            title="Time-Track"
+            text="lorem ipsum solor sit amet"
+          />
+        </div> -->
+      <!-- <div data-tab="technologies"></div> -->
+      <!-- </Tabs> -->
+    </div>
+  </main>
+</Layout>
