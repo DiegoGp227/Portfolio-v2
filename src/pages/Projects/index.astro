@@ -2,23 +2,24 @@
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../Components/Header/index.astro";
 import ProjectsDiv from "../../Components/Projects/ProjectsDiv/index.astro";
+import TechnologiesDiv from "../../Components/Projects/technologiesDiv/index.astro";
 import style from "./style.module.css";
 
 import { Tabs } from "webcoreui/astro";
 
 const items = [
   {
-    label: "Introduction",
-    value: "intro",
+    label: "Proyectos",
+    value: "projects",
     active: true,
   },
   {
-    label: "Setup",
-    value: "setup",
+    label: "Certificados",
+    value: "certificates",
   },
   {
-    label: "Conclusion",
-    value: "conclusion",
+    label: "Tecnologias",
+    value: "technologies",
   },
 ];
 ---
@@ -36,28 +37,84 @@ const items = [
       </p>
     </div>
     <div class={style.divTwo}>
-      <Tabs items={items} theme="boxed" className={style.tabs} even={true}>
-        <div data-tab="intro" data-active="true" class={style.divProjects}>
+      <div class={style.sliderDiv}>
+        <nav>
+          <ul class={style.ulNav}>
+            <li class={style.liNav}>Proyectos</li>
+            <li class={style.liNav}>Diseños</li>
+            <li class={style.liNav}>Tecnologias</li>
+          </ul>
+        </nav>
+        <div class={style.containerProjects}>
+          <TechnologiesDiv title="Html"/>
+          <TechnologiesDiv title="Css"/>
+          <TechnologiesDiv title="Javascript"/>
+          <TechnologiesDiv title="Astro"/>
+          <TechnologiesDiv title="React.js"/>
+          <TechnologiesDiv title="Node.js"/>
+          <TechnologiesDiv title="Express"/>
+          <TechnologiesDiv title="Mysql"/>
+          <TechnologiesDiv title="Figma"/>
+          <TechnologiesDiv title="Github"/>
+          <TechnologiesDiv title="Slack"/>
+          
+<!-- 
+            <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          />
+            <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          />
+            <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          />
+            <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          />
+            <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          />
+            <ProjectsDiv
+            src="/Assets/booklive1.png"
+            title="booklive1"
+            text="lorem ipsum solor sit amet"
+          /> -->
+          
+        </div>
+      </div>
+      <!-- <Tabs items={items} theme="boxed" className={style.tabs} even={true}> -->
+      <!-- <div data-tab="projects" data-active="true" class={style.divProjects}>
+          <TechnologiesDiv svg="" />
+        </div>
+        <div data-tab="certificates" class={style.divCertificates}>
           <ProjectsDiv
-            class={style.project}
             src="/Assets/booklive1.png"
             title="booklive1"
             text="lorem ipsum solor sit amet"
           />
           <ProjectsDiv
-            class={style.project}
             src="/Assets/Next-Strapper.jpeg"
             title="Next-Strapper"
             text="lorem ipsum solor sit amet"
           />
           <ProjectsDiv
-            class={style.project}
             src="/Assets/Time-Track.png"
             title="Time-Track"
             text="lorem ipsum solor sit amet"
           />
-        </div>
-      </Tabs>
+        </div> -->
+      <!-- <div data-tab="technologies"></div> -->
+      <!-- </Tabs> -->
     </div>
   </main>
 </Layout>

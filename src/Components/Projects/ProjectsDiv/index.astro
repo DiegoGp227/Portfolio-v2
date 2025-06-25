@@ -1,14 +1,19 @@
 ---
-const { src, title, text } = Astro.props;
+const { src, title, text, class: className } = Astro.props;
 import style from "./style.module.css";
 ---
 
-<div class={style.div}>
-  <div>
-    <img src={src} alt="" class={style.img} />
+<div class={style.cardDiv}>
+  <div class={style.imgDiv}>
+    <img src={src} alt={title} class={style.img} />
   </div>
-  <div>
-    <h1>{title}</h1>
-    <p>{text}</p>
+  <div class={style.mainDiv}>
+    <div>
+      <h3 class={style.titleCard}>{title}</h3>
+      <p class={style.textCard}>{text}</p>
+    </div>
+    <div>
+      <button class={style.buttonInfo}> Mas información </button>
+    </div>
   </div>
 </div>

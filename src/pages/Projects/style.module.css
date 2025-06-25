@@ -1,24 +1,24 @@
 .main {
   width: 100vw;
-  height: 100vh; 
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
 }
 
 .divOne {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   flex-direction: column;
-  height: 30vh;
+  height: 30%;
   max-width: 700px;
-  padding: 0 40px;
-  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .title {
-  color: aliceblue;
+  color: blueviolet;
   font-size: 50px;
 }
 
@@ -28,22 +28,62 @@
 }
 
 .divTwo {
-  height: 70vh;
-  overflow-y: auto; 
+  height: 70%;
   width: 100vw;
   display: flex;
   justify-content: center;
-  padding: 20px;
 }
 
 .tabs {
-  color: red;
-  /* display: flex;
-  flex-direction: column; */
+  color: blueviolet;
+  width: 700px;
 }
 
 .divProjects {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+.divCertificates {
+  display: flex;
+}
+
+.sliderDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ulNav {
+  display: flex;
+}
+
+.liNav {
+  color: blueviolet;
+  list-style: none;
+  border: 2px solid blueviolet;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.liNav:hover {
+  background-color: blueviolet;
+  color: aliceblue;
+}
+
+.containerProjects {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
 }
