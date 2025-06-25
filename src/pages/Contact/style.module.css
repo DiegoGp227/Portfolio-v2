@@ -1,0 +1,125 @@
+.divGeneral {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleDiv {
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 700px;
+  background-color: #2f0a51;
+  background: linear-gradient(to right, #2f0a51, #6d3b9c);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.myRedesDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  align-content: center;
+  width: 100%;
+  gap: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.redDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.svgRed {
+  width: 20px;
+  height: 20px;
+}
+
+.textRed {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.formDiv {
+  display: flex;
+  width: 500px;
+  background-color: #0a0522;
+  border-radius: 20px 0 0 20px;
+  padding: 35px;
+}
+
+.form {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.labelForm {
+  color: aliceblue;
+}
+
+.inputForm {
+  width: 40%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 2px solid blueviolet;
+  background-color: #0a0522;
+  color: aliceblue;
+}
+
+.inputForm:focus {
+  outline: none;
+  border: 2px solid transparent;
+  background-image: linear-gradient(#0a0522, #0a0522),
+    linear-gradient(to right, blueviolet, #6d3b9c);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  box-shadow: 0 0 8px #6d3b9c;
+}
+
+.title {
+  font-size: 50px;
+  color: aliceblue;
+}
+
+.inputOne,
+.inputTwo {
+  width: 100%;
+}
+
+.inputTree {
+  width: 100%;
+  height: 100px;
+}
+
+.button {
+  padding: 10px;
+  border: 10px;
+  width: 100%;
+  background-color: #0a0522;
+  border: 2px solid blueviolet;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: blueviolet;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.button:hover {
+    background-color: blueviolet;
+    color: aliceblue;
+}
