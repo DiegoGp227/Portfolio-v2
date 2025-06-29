@@ -14,10 +14,16 @@
   align-items: center;
 }
 
+.title{ 
+  font-size: 50px;
+  color: blueviolet;
+}
+
 .main {
-  width: 700px;
-  /* background: linear-gradient(to right, #2f0a51, #6d3b9c); */
-  
+  width: 800px;
+  background-color: #2f0a51;
+  background: linear-gradient(to right, #2f0a51, #6d3b9c);
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
   background-color: #0a0522;
@@ -29,22 +35,46 @@
   justify-content: center;
   align-items: start;
   align-content: center;
+  align-items: center;
   width: 100%;
   gap: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.redDiv {
+
+
+.divGif {
+  & img {
+    height: 160px;
+    width: 160px;
+  }
+}
+
+.divItems {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  justify-items: center;
+  align-items: flex-start;
 }
 
 .svgRed {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
+}
+
+.redDiv {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 8px;
+  transition: background ease 0.4s;
+  &:hover {
+    background: #7b4ac5;
+    transition: background ease 0.4s;
+  }
 }
 
 .textRed {
@@ -56,7 +86,6 @@
   display: flex;
   width: 500px;
   background-color: #0a0522;
-  border-radius: 20px 0 0 20px;
   padding: 35px;
 }
 
@@ -91,11 +120,6 @@
   box-shadow: 0 0 8px #6d3b9c;
 }
 
-.title {
-  font-size: 50px;
-  color: aliceblue;
-}
-
 .inputOne,
 .inputTwo {
   width: 100%;
@@ -104,9 +128,17 @@
 .inputTree {
   width: 100%;
   height: 100px;
+  max-width: 100%; /* esto lo que hace es que el textarea no se expanda todo lo que quiera*/
+  max-height: 100px;
+  min-height: 100px;
+  min-width: 100%;
 }
 
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
   padding: 10px;
   border: 10px;
   width: 100%;
@@ -121,5 +153,9 @@
 
 .button:hover {
     background-color: blueviolet;
+    transition: background-color ease 2s;
     color: aliceblue;
+  & path {
+    fill : #ffff
+  }
 }
