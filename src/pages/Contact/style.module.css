@@ -16,11 +16,11 @@
 
 .main {
   width: 700px;
-  background-color: #2f0a51;
-  background: linear-gradient(to right, #2f0a51, #6d3b9c);
-
+  /* background: linear-gradient(to right, #2f0a51, #6d3b9c); */
+  
   display: flex;
   justify-content: space-between;
+  background-color: #0a0522;
 }
 
 .myRedesDiv {
