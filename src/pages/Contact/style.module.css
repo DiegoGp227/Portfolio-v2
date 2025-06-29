@@ -14,7 +14,7 @@
   align-items: center;
 }
 
-.title{ 
+.title {
   font-size: 50px;
   color: blueviolet;
 }
@@ -33,29 +33,36 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
   align-content: center;
   align-items: center;
   width: 100%;
-  gap: 10px;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-
-
-.divGif {
-  & img {
-    height: 160px;
-    width: 160px;
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 
+.svg {
+  height: 120px;
+  width: 120px;
+  animation: spin 20s linear infinite;
+}
+
 .divItems {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: flex-start;
+  padding: 10px;
+  gap: 7px;
 }
 
 .svgRed {
@@ -64,10 +71,13 @@
 }
 
 .redDiv {
-  border-radius: 20px;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: flex-start;
+  width: 240px;
+  width: 100%;
   gap: 20px;
   padding: 8px;
   transition: background ease 0.4s;
@@ -152,10 +162,10 @@
 }
 
 .button:hover {
-    background-color: blueviolet;
-    transition: background-color ease 2s;
-    color: aliceblue;
+  background-color: blueviolet;
+  transition: background-color ease 2s;
+  color: aliceblue;
   & path {
-    fill : #ffff
+    fill: #ffff;
   }
 }

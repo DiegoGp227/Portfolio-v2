@@ -103,6 +103,7 @@
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
+  display: none;
 }
 
 .containerDesigns {
@@ -122,5 +123,4 @@
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
-  display: none;
 }

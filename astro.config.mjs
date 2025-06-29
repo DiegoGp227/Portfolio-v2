@@ -11,7 +11,7 @@ export default defineConfig({
     },
     server: {
       host: true,
-      allowedHosts: ['2a2a-190-25-164-252.ngrok-free.app']
+      allowedHosts: ['150e-190-25-164-252.ngrok-free.app']
     },
     ssr: {
       noExternal: ['webcoreui'], // 👈 ¡Esto es lo importante!

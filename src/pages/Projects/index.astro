@@ -2,7 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../Components/Header/index.astro";
 import ProjectsDiv from "../../Components/Projects/ProjectsDiv/index.astro";
-import TechnologiesDiv from "../../Components/Projects/technologiesDiv/index.astro";
+import TechnologiesDiv from "../../Components/Projects/TechnologiesDiv/index.astro";
 import style from "./style.module.css";
 
 const items = [
@@ -40,14 +40,14 @@ const items = [
           <ul class={style.ulNav}>
             <li class={style.liNav}>Proyectos</li>
             <li class={style.liNav}>Diseños</li>
-            <li class={style.liNav}>Tecnologias</li>
+            <li class={style.liNav} id="saad">Tecnologias</li>
           </ul>
         </nav>
         <div class={style.containerGeneral}>
           <div class={style.containerProjects}>
             <ProjectsDiv
               src="/Assets/booklive1.png"
-              title="booklive1"
+              title="Book Live"
               text="lorem ipsum solor sit amet"
             />
             <ProjectsDiv
@@ -61,7 +61,7 @@ const items = [
               text="lorem ipsum solor sit amet"
             />
             <ProjectsDiv
-              src="/Assets/Time-Track.png"
+              src="/Assets/notte-home.jpeg"
               title="Notte"
               text="lorem ipsum solor sit amet"
             />
