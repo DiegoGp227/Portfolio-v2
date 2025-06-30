@@ -71,21 +71,26 @@
   align-items: center;
 }
 
-.ulNav {
+.nav {
   display: flex;
 }
 
-.liNav {
+.buttonNav {
   color: blueviolet;
-  list-style: none;
   border: 2px solid blueviolet;
+  background-color: transparent;
   border-radius: 5px;
   padding: 10px;
   margin: 10px;
   transition: 0.5s;
 }
 
-.liNav:hover {
+.buttonNav:hover {
+  background-color: blueviolet;
+  color: aliceblue;
+}
+
+.buttonNav:active {
   background-color: blueviolet;
   color: aliceblue;
 }
@@ -96,7 +101,16 @@
   flex-direction: column;
 }
 
-.containerProjects {
+.divActive {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.divInactive {
   width: 900px;
   display: flex;
   justify-content: center;
@@ -106,21 +120,3 @@
   display: none;
 }
 
-.containerDesigns {
-  width: 900px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 50px;
-  display: none;
-}
-
-.containerTechnologies {
-  width: 900px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 50px;
-}
