@@ -1,7 +1,7 @@
 ---
 import style from "./style.module.css";
+const { src } = Astro.props;
 ---
-
 <div class={style.divImg}>
-  <img src="/Assets/Time-Track.png" alt="Time track img" class={style.img} />
+  <img src={src} alt="Time track img" class={style.img} />
 </div>
