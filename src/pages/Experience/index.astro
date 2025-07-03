@@ -1,8 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../Components/Header/index.astro";
-import ProjectsDiv from "../../Components/Projects/ProjectsDiv/index.astro";
-import TechnologiesDiv from "../../Components/Projects/TechnologiesDiv/index.astro";
+import ProjectsDiv from "../../Components/Experience/ProjectsDiv/index.astro";
+import TechnologiesDiv from "../../Components/Experience/TechnologiesDiv/index.astro";
 import style from "./style.module.css";
 ---
 
@@ -366,37 +366,6 @@ import style from "./style.module.css";
       </div>
     </div>
   </main>
-  <!-- <script type="module">
-    const divActive = "{{divActive}}";
-    const divInactive = "{{divInactive}}";
-
-    const divOne = document.getElementById("divOne");
-    const divTwo = document.getElementById("divTwo");
-    const divTree = document.getElementById("divTree");
-
-    const buttonOne = document.getElementById("buttonOne")
-    const buttonTwo = document.getElementById("buttonTwo")
-    const buttonTree = document.getElementById("buttonTree")
-
-
-    buttonOne?.addEventListener("click", function (e) {
-      divOne.classList.toggle(divActive);
-      divTwo.classList.toggle(divInactive);
-      divTree.classList.toggle(divInactive);
-    });
-
-    buttonTwo?.addEventListener("click", function (e) {
-      divOne.classList.toggle(divInactive);
-      divTwo.classList.toggle(divActive);
-      divTree.classList.toggle(divInactive);
-    });
-
-    buttonTree?.addEventListener("click", function (e) {
-      divOne.classList.toggle(divInactive);
-      divTwo.classList.toggle(divInactive);
-      divTree.classList.toggle(divActive);
-    })
-  </script> -->
   <script>
     const divOne = document.getElementById("divOne") as HTMLElement;
     const divTwo = document.getElementById("divTwo") as HTMLElement;
