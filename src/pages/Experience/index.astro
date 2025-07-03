@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../Components/Header/index.astro";
+import MainInformation from "../../Components/Experience/MainInformation/index.astro";
 import ProjectsDiv from "../../Components/Experience/ProjectsDiv/index.astro";
 import TechnologiesDiv from "../../Components/Experience/TechnologiesDiv/index.astro";
 import style from "./style.module.css";
@@ -9,15 +10,7 @@ import style from "./style.module.css";
 <Layout>
   <Header />
   <main class={style.main}>
-    <div class={style.divOne}>
-      <h1 class={style.title}>Proyectos Y Tecnologias</h1>
-      <p class={style.text}>
-        Estos proyectos representan mi evolución como desarrollador. A través de
-        ellos he aprendido a resolver problemas, estructurar ideas y construir
-        soluciones funcionales. Cada uno ha sido una oportunidad para crecer,
-        probar cosas nuevas y seguir puliendo mi forma de trabajar.
-      </p>
-    </div>
+    <MainInformation />
     <div class={style.divTwo}>
       <div class={style.sliderDiv}>
         <nav class={style.nav}>

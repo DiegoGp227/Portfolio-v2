@@ -1,0 +1,19 @@
+.divOne {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  height: 30%;
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+.title {
+  color: blueviolet;
+  font-size: 50px;
+}
+
+.text {
+  color: aliceblue;
+  text-align: center;
+}
