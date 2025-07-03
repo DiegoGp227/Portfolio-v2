@@ -87,7 +87,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .divInactive {
@@ -96,7 +96,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 30px;
   display: none;
 }
 
