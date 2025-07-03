@@ -1,5 +1,6 @@
 ---
 import style from "./style.module.css";
+const { link } = Astro.props;
 ---
 
 <div class={style.div}>
@@ -13,10 +14,11 @@ import style from "./style.module.css";
         fill="currentColor"
         d="M4 4a2 2 0 0 1 2-2h8a1 1 0 0 1 .707.293l5 5A1 1 0 0 1 20 8v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2zm13.586 4L14 4.414V8zM12 4H6v16h12V10h-5a1 1 0 0 1-1-1zm-4 9a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1m0 4a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1"
       ></path></svg
-    >   download cv
+    > Descarga cv
   </button>
-  <button class={style.buttons}>
-    <svg class={style.svg}
+  <button class={style.buttons} onclick={`location.href='${link}'`}>
+    <svg
+      class={style.svg}
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
@@ -25,6 +27,6 @@ import style from "./style.module.css";
         fill="currentColor"
         d="m8 18l-6-6l6-6l1.425 1.425l-4.6 4.6L9.4 16.6zm8 0l-1.425-1.425l4.6-4.6L14.6 7.4L16 6l6 6z"
       ></path></svg
-    > projects
+    > proyectos
   </button>
 </div>
