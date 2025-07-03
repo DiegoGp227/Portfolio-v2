@@ -104,21 +104,34 @@ const height = 20;
       </div>
 
       <div class={style.formDiv}>
-        <form action="" class={style.form}>
-          <label for="" class={style.labelForm}>Nombre</label>
+        <form
+          class={style.form}
+          action="https://formsubmit.co/diego.gp227@gmail.com"
+          method="POST"
+          class="formActivity"
+        >
+          <label for="name" class={style.labelForm}>Nombre</label>
           <input
             type="text"
+            id="name"
             class={`${style.inputForm} ${style.inputOne}`}
             autofocus
           />
-          <label for="" class={style.labelForm}>Asunto</label>
-          <input type="email" class={`${style.inputForm} ${style.inputTwo}`} />
-          <label for="Text" class={style.labelForm}>Texto</label>
-          <textarea name="Text" class={`${style.inputForm} ${style.inputTree}`}
-          ></textarea>
-          <button class={style.button}
-            >Enviar!
 
+          <label for="subject" class={style.labelForm}>Asunto</label>
+          <input
+            type="email"
+            id="subject"
+            class={`${style.inputForm} ${style.inputTwo}`}
+          />
+
+          <label for="text" class={style.labelForm}>Texto</label>
+          <textarea
+            name="text"
+            id="text"
+            class={`${style.inputForm} ${style.inputTree}`}></textarea>
+          <button class={style.button} type="submit"
+            >Enviar!
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
