@@ -1,0 +1,46 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../Components/Header/index.astro";
+import WithPage from "../../../Components/Projects/MainInformation/WithPage/index.astro";
+import SecondInformation from "../../../Components/Projects/SecondInformation/index.astro";
+import ImgDiv from "../../../Components/Projects/ImgDiv/index.astro";
+import Html from "../../../Components/Projects/Technologies/Html/index.astro";
+import Css from "../../../Components/Projects/Technologies/Css/index.astro";
+import Javascript from "../../../Components/Projects/Technologies/Javascript/index.astro";
+import AstroFrame from "../../../Components/Projects/Technologies/AstroFrame/index.astro";
+import React from "../../../Components/Projects/Technologies/React/index.astro";
+import Bun from "../../../Components/Projects/Technologies/Bun/index.astro";
+import Elysia from "../../../Components/Projects/Technologies/Elysia/index.astro";
+import style from "./style.module.css";
+---
+
+<Layout>
+  <Header />
+  <div class={style.divGeneral}>
+    <div class={style.divLeft}>
+      <WithPage
+        title="Notte"
+        text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit exercitationem repudiandae numquam mollitia, maxime tenetur earum unde cupiditate reprehenderit magni rerum facere? Pariatur laborum sunt maiores recusandae ipsam at iste."
+        link="https://github.com/devkaleth/notte"
+      />
+      <div>
+        <div class={style.divTitleTechnologies}>
+          <h2 class={style.titleTechnologies}>Tecnologies</h2>
+        </div>
+        <div class={style.secctionTechnologies}>
+          <Css />
+          <Html />
+          <Javascript />
+          <React />
+          <AstroFrame />
+          <Bun />
+          <Elysia />
+        </div>
+      </div>
+    </div>
+    <div class={style.divRight}>
+      <ImgDiv src="/Assets/notte-home.jpeg" />
+      <SecondInformation />
+    </div>
+  </div>
+</Layout>
