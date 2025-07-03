@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../Components/Header/index.astro";
-import style from "./style.module.css";
+import WithPage from "../../Components/Projects/MainInformation/WithPage/index.astro";
 import Html from "../../Components/Projects/Technologies/Html/index.astro";
 import Css from "../../Components/Projects/Technologies/Css/index.astro";
 import Javascript from "../../Components/Projects/Technologies/Javascript/index.astro";
@@ -9,6 +9,7 @@ import React from "../../Components/Projects/Technologies/React/index.astro";
 import Node from "../../Components/Projects/Technologies/Node/index.astro";
 import Express from "../../Components/Projects/Technologies/Express/index.astro";
 import Mysql from "../../Components/Projects/Technologies/Mysql/index.astro";
+import style from "./style.module.css";
 // import { name } from = Astro.props;
 ---
 
@@ -16,24 +17,11 @@ import Mysql from "../../Components/Projects/Technologies/Mysql/index.astro";
   <Header />
   <div class={style.divGeneral}>
     <div class={style.divLeft}>
-      <div class={style.divTitle}>
-        <h1 class={style.title}>Time Tracker</h1>
-      </div>
-      <div class={style.divText}>
-        <p class={style.text}>
-          Esta app conecta con la API de Strava para ofrecer a ciclistas una
-          visión más personalizada de su entrenamiento. Permite visualizar
-          estadísticas clave, analizar el progreso a lo largo del tiempo y
-          explorar rutas favoritas de forma clara e intuitiva. Está pensada para
-          motivar, simplificar el seguimiento del rendimiento y ayudar a cada
-          ciclista a entender mejor su evolución, sin depender del aspecto
-          social de Strava.
-        </p>
-      </div>
-      <div class={style.divButtons}>
-        <button class={style.button}>Page</button>
-        <button class={style.button}>Github</button>
-      </div>
+      <WithPage
+        title="Time Tracker"
+        text="Esta app conecta con la API de Strava para ofrecer a ciclistas una visión más personalizada de su entrenamiento. Permite visualizar estadísticas clave, analizar el progreso a lo largo del tiempo y explorar rutas favoritas de forma clara e intuitiva. Está pensada para motivar, simplificar el seguimiento del rendimiento y ayudar a cada ciclista a entender mejor su evolución, sin depender del aspecto social de Strava."
+        link="https://github.com/DiegoGp227/Next-Stepper"
+      />
       <div>
         <div class={style.divTitleTechnologies}>
           <h2 class={style.titleTechnologies}>Tecnologies</h2>
