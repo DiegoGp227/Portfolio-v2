@@ -1,0 +1,19 @@
+---
+const { src, title, text, link, class: className } = Astro.props;
+import style from "./style.module.css";
+---
+
+<div class={style.cardDiv}>
+  <div class={style.imgDiv}>
+    <img src={src} alt={title} class={style.img} />
+  </div>
+  <div class={style.mainDiv}>
+    <div>
+      <h3 class={style.titleCard}>{title}</h3>
+      <p class={style.textCard}>{text}</p>
+    </div>
+    <div>
+      <button class={style.buttonInfo} onclick={`location.href='${link}'`}>Link</button>
+    </div>
+  </div>
+</div>

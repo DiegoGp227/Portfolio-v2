@@ -1,13 +1,13 @@
 .cardDiv {
   width: 250px;
-  height: 250px;
+  height: auto;
   padding: 10px;
   background-color: hsl(278, 100%, 10%);
   border-radius: 5px;
 }
 
 .imgDiv {
-  height: 114px;
+  height: auto;
 }
 
 .img {
@@ -22,7 +22,7 @@
   justify-content: space-between;
 }
 
-.titleCard {
+.titleCard{
   color: aliceblue;
 }
 
@@ -41,6 +41,6 @@
 }
 
 .buttonInfo:hover {
-  background-color: blueviolet;
-  color: aliceblue;
+    background-color: blueviolet;
+    color: aliceblue;
 }
