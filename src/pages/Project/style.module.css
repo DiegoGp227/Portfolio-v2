@@ -13,53 +13,6 @@
   padding: 10px;
 }
 
-.divTitle {
-  width: 100%;
-  margin: 10px 0 10px 0;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  color: blueviolet;
-  font-size: 50px;
-}
-
-.divText {
-  width: 100%;
-  margin: 10px 0 10px 0;
-  height: 100px;
-}
-
-.text {
-  color: aliceblue;
-  text-align: center;
-}
-
-.divButtons {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.button {
-  width: 48%;
-  height: 30px;
-  padding: 5px;
-  color: blueviolet;
-  background-color: #0a0522;
-  border: 2px solid blueviolet;
-  border-radius: 5px;
-  transition: 0.5s;
-}
-
-.button:hover {
-  background-color: blueviolet;
-  color: antiquewhite;
-}
-
 .divTitleTechnologies {
   width: 100%;
   height: auto;
@@ -77,43 +30,6 @@
   width: 90%;
 }
 
-.divTechnologies {
-  border-radius: 5px;
-  /* background-color: #7b4ac5; */
-  background-color: transparent;
-  border: 2px solid blueviolet;
-  padding: 5px;
-  width: auto;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  transition: 0.5s;
-}
-
-.divTechnologies:hover {
-  background-color: #7b4ac5;
-  color: aliceblue;
-}
-
-.divTechnologies:hover p {
-  color: aliceblue;
-}
-
-.titleTechnologies {
-  color: aliceblue;
-}
-
-.svg {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-}
-
-.textTechnologies {
-  font-size: 20px;
-  color: blueviolet;
-}
-
 .divRight {
   width: 50%;
   display: flex;
@@ -122,17 +38,7 @@
   flex-direction: column;
 }
 
-.divImg {
-  width: 500px;
-  height: auto;
-}
-
-.img {
-  width: 500px;
-  border-radius: 5px;
-}
-
-.divSegundario {
+.secondInformation {
   width: 500px;
   height: 200px;
   background-color: #181039;

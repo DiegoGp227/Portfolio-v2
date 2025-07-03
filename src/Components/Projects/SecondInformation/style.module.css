@@ -1,0 +1,21 @@
+.secondInformation {
+  width: 500px;
+  height: 200px;
+  background-color: #181039;
+  margin-top: 30px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.titleSubSecction {
+  color: aliceblue;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textSegundary {
+  color: aliceblue;
+  text-align: start;
+}

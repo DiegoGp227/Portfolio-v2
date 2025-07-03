@@ -2,6 +2,8 @@
 import Layout from "../../layouts/Layout.astro";
 import Header from "../../Components/Header/index.astro";
 import WithPage from "../../Components/Projects/MainInformation/WithPage/index.astro";
+import SecondInformation from "../../Components/Projects/SecondInformation/index.astro";
+import ImgDiv from "../../Components/Projects/ImgDiv/index.astro";
 import Html from "../../Components/Projects/Technologies/Html/index.astro";
 import Css from "../../Components/Projects/Technologies/Css/index.astro";
 import Javascript from "../../Components/Projects/Technologies/Javascript/index.astro";
@@ -38,25 +40,8 @@ import style from "./style.module.css";
       </div>
     </div>
     <div class={style.divRight}>
-      <div class={style.divImg}>
-        <img
-          src="/Assets/Time-Track.png"
-          alt="Time track img"
-          class={style.img}
-        />
-      </div>
-      <div class={style.divSegundario}>
-        <h3 class={style.titleSubSecction}>Funcionalidades</h3>
-        <p class={style.textSegundary}>-Registro de usuarios en local</p>
-        <p class={style.textSegundary}>-Validacion de usauarios en local</p>
-        <p class={style.textSegundary}>-Integracion con api de strava</p>
-        <p class={style.textSegundary}>-Basboard personalizado</p>
-        <p class={style.textSegundary}>-Análisis de rendimiento</p>
-        <p class={style.textSegundary}>-Comparación por periodos</p>
-      </div>
-      <!-- <div>
-        <h1 style="color: aliceblue;">Estado: En progreso</h1>
-      </div> -->
+      <ImgDiv />
+      <SecondInformation />
     </div>
   </div>
 </Layout>
