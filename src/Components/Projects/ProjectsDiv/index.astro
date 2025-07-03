@@ -1,5 +1,5 @@
 ---
-const { src, title, text, class: className } = Astro.props;
+const { src, title, text, link, class: className } = Astro.props;
 import style from "./style.module.css";
 ---
 
@@ -13,7 +13,7 @@ import style from "./style.module.css";
       <p class={style.textCard}>{text}</p>
     </div>
     <div>
-      <button class={style.buttonInfo}> Mas información </button>
+      <button class={style.buttonInfo} onclick={`location.href='${link}'`}> Mas información </button>
     </div>
   </div>
 </div>

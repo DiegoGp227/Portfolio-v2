@@ -1,6 +1,6 @@
 ---
 import style from "./style.module.css";
-const { title, text, link } = Astro.props
+const { title, text, link } = Astro.props;
 ---
 
 <div class={style.divGeneral}>
@@ -9,11 +9,13 @@ const { title, text, link } = Astro.props
   </div>
   <div class={style.divText}>
     <p class={style.text}>
-        {text}
+      {text}
     </p>
   </div>
   <div class={style.divButtons}>
-    <button class={style.button} onclick={`location.href='${link}'`}>Page</button>
+    <button class={style.button} onclick={`location.href='${link}'`}
+      >Page</button
+    >
     <button class={style.button}>Github</button>
   </div>
   <head></head>
