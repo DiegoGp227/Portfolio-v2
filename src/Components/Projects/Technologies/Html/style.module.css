@@ -29,4 +29,5 @@
 .text {
   font-size: 20px;
   color: blueviolet;
+  transition: 0.5s;
 }
