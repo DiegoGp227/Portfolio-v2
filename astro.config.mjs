@@ -2,6 +2,8 @@
 import { defineConfig } from 'astro/config';
 import path from 'path';
 
+import react from '@astrojs/react';
+
 export default defineConfig({
   vite: {
     resolve: {
@@ -17,4 +19,6 @@ export default defineConfig({
       noExternal: ['webcoreui'], // 👈 ¡Esto es lo importante!
     },
   },
+
+  integrations: [react()],
 });

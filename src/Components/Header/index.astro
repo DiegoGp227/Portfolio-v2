@@ -1,51 +1,10 @@
 ---
 import NameDiv from "./NameDiv/index.astro";
-import Nav from "./Nav/index.astro";
+import Nav from "./Nav/index.tsx";
 import style from "./style.module.css";
 ---
 
 <header class={style.header}>
   <NameDiv />
-
-  <!-- Botón hamburguesa -->
-  <button id="menuToggle" class={style.menuToggle} aria-label="Abrir menú">
-    <span class={style.hamburger}></span>
-    <span class={style.hamburger}></span>
-    <span class={style.hamburger}></span>
-  </button>
-
-  <!-- Navegación -->
   <Nav />
 </header>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menuToggle');
-    const nav = document.querySelector('nav');
-    
-    if (menuToggle && nav) {
-      menuToggle.addEventListener('click', function() {
-        nav.classList.toggle('active');
-        menuToggle.classList.toggle('active');
-      });
-
-      // Cerrar menú cuando se hace clic en un enlace
-      const navLinks = nav.querySelectorAll('a');
-      navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          nav.classList.remove('active');
-          menuToggle.classList.remove('active');
-        });
-      });
-
-      // Cerrar menú cuando se hace clic fuera
-      document.addEventListener('click', function(event) {
-        const target = event.target as Node;
-        if (!menuToggle.contains(target) && !nav.contains(target)) {
-          nav.classList.remove('active');
-          menuToggle.classList.remove('active');
-        }
-      });
-    }
-  });
-</script>
