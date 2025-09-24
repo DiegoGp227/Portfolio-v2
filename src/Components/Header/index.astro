@@ -2,14 +2,34 @@
 import NameDiv from "./NameDiv/index.astro";
 import Nav from "./Nav/index.astro";
 import style from "./style.module.css";
+
+// 🚨 Nota: Astro no maneja estados directamente, así que usaremos un poco de JS en cliente.
 ---
 
 <header class={style.header}>
-  <NameDiv/>
-  <button class={style.menuToggle} id="menuToggle">
+  <NameDiv />
+
+  <!-- Botón hamburguesa -->
+  <button id="menuToggle" class={style.menuToggle} aria-label="Abrir menú">
     <span class={style.hamburger}></span>
     <span class={style.hamburger}></span>
     <span class={style.hamburger}></span>
   </button>
-  <Nav />
+
+  <!-- Menú -->
+  <nav id="navMenu" class={style.navHeader}>
+    <Nav />
+  </nav>
+
+  <script>
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("navMenu");
+    if (!toggle || !nav) {
+      throw new Error("No se encontró el botón o el menú de navegación");
+    }
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle("open");
+      nav.classList.toggle("open");
+    });
+  </script>
 </header>
