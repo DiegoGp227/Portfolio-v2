@@ -58,7 +58,7 @@
   width: 100%;
 }
 
-.nav {
+.subNav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -148,7 +148,7 @@
     padding: 0 5px;
   }
   
-  .nav {
+  .subNav {
     gap: 5px;
   }
 }
@@ -182,7 +182,7 @@
     padding: 0;
   }
   
-  .nav {
+  .subNav {
     gap: 3px;
     margin: 0 -5px;
   }

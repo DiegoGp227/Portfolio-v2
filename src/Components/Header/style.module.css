@@ -1,98 +1,68 @@
 .header {
   width: 100vw;
-  height: 50px;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: transparent;
-  z-index: 1000; /* Asegura que el header esté encima de otros elementos */
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-/* Estilo del botón hamburguesa */
+/* Mobile menu toggle button */
 .menuToggle {
-  display: none; /* Oculto por defecto en desktop */
+  display: none;
   flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 25px;
-  background: transparent;
+  background: none;
   border: none;
   cursor: pointer;
-  padding: 0;
-  z-index: 1001; /* Z-index alto para que esté por encima del menú */
+  padding: 5px;
+  z-index: 1001;
 }
 
-.menuToggle span {
-  width: 100%;
+.hamburger {
+  width: 25px;
   height: 3px;
-  background: black; /* Cambia el color si tu fondo es oscuro */
-  border-radius: 10px;
-  transition: all 0.3s linear;
-  position: relative;
-  transform-origin: left;
+  background-color: aliceblue;
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
 }
 
-/* Estado "open" del botón */
-.menuToggle.open span:first-child {
-  transform: rotate(45deg);
+/* Hamburger animation when active */
+.menuToggle.active .hamburger:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.menuToggle.open span:nth-child(2) {
+.menuToggle.active .hamburger:nth-child(2) {
   opacity: 0;
 }
 
-.menuToggle.open span:last-child {
-  transform: rotate(-45deg);
+.menuToggle.active .hamburger:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Estilo del menú de navegación */
-.navHeader {
-  position: fixed;
-  top: 0;
-  right: -100%; /* Oculto a la derecha fuera de la pantalla */
-  width: 70%;
-  height: 100vh;
-  background-color: #f0f0f0; /* Fondo del menú móvil */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: right 0.5s ease-in-out;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.5);
-  padding-top: 50px; /* Espacio para que no choque con el header */
-}
-
-/* Estado "open" del menú */
-.navHeader.open {
-  right: 0; /* Visible, se desliza a la derecha */
-}
-
-/* Media query para móviles */
-@media (max-width: 768px) {
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+  .header {
+    height: 50px;
+    padding: 0 15px;
+  }
+  
   .menuToggle {
-    display: flex; /* Muestra el botón hamburguesa */
-  }
-
-  .navHeader {
+    display: flex;
   }
 }
 
-/* Media query para desktop */
-@media (min-width: 769px) {
-  .menuToggle {
-    display: none;
-  }
-
-  .navHeader {
-    position: static; /* Vuelve a la posición normal */
-    width: auto;
-    height: auto;
-    background: transparent;
-    flex-direction: row;
-    gap: 1.5rem;
-    justify-content: flex-end;
-    align-items: center;
-    transition: none;
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+  .header {
+    height: 45px;
+    padding: 0 10px;
   }
 }

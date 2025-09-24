@@ -2,8 +2,6 @@
 import NameDiv from "./NameDiv/index.astro";
 import Nav from "./Nav/index.astro";
 import style from "./style.module.css";
-
-// 🚨 Nota: Astro no maneja estados directamente, así que usaremos un poco de JS en cliente.
 ---
 
 <header class={style.header}>
@@ -16,20 +14,38 @@ import style from "./style.module.css";
     <span class={style.hamburger}></span>
   </button>
 
-  <!-- Menú -->
-  <nav id="navMenu" class={style.navHeader}>
-    <Nav />
-  </nav>
-
-  <script>
-    const toggle = document.getElementById("menuToggle");
-    const nav = document.getElementById("navMenu");
-    if (!toggle || !nav) {
-      throw new Error("No se encontró el botón o el menú de navegación");
-    }
-    toggle.addEventListener("click", () => {
-      toggle.classList.toggle("open");
-      nav.classList.toggle("open");
-    });
-  </script>
+  <!-- Navegación -->
+  <Nav />
 </header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menuToggle');
+    const nav = document.querySelector('nav');
+    
+    if (menuToggle && nav) {
+      menuToggle.addEventListener('click', function() {
+        nav.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      });
+
+      // Cerrar menú cuando se hace clic en un enlace
+      const navLinks = nav.querySelectorAll('a');
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          nav.classList.remove('active');
+          menuToggle.classList.remove('active');
+        });
+      });
+
+      // Cerrar menú cuando se hace clic fuera
+      document.addEventListener('click', function(event) {
+        const target = event.target as Node;
+        if (!menuToggle.contains(target) && !nav.contains(target)) {
+          nav.classList.remove('active');
+          menuToggle.classList.remove('active');
+        }
+      });
+    }
+  });
+</script>
