@@ -8,3 +8,88 @@
 .body {
     background-color: #0a0522;
 }
+
+/* ==== Reset / Normalización básica ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%; /* 16px por defecto */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==== Imágenes y multimedia ==== */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==== Enlaces ==== */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==== Contenedor principal ==== */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+/* ==== Tipografía fluida ==== */
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+h3 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+}
+p {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
+
+/* ==== Grillas y flex ==== */
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* ==== Media Queries Globales ==== */
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-inline: 0.5rem;
+  }
+}

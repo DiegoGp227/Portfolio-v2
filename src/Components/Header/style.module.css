@@ -1,68 +1,95 @@
 .header {
-    width: 100vw;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    padding: 0 20px;
-    box-sizing: border-box;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-/* Mobile menu toggle button */
+/* Botón hamburguesa */
 .menuToggle {
-    display: none;
-    flex-direction: column;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
-    z-index: 1001;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
 }
 
 .hamburger {
-    width: 25px;
-    height: 3px;
-    background-color: aliceblue;
-    margin: 3px 0;
-    transition: 0.3s;
-    border-radius: 2px;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 3px;
+  transition: all 0.3s ease;
 }
 
-/* Hamburger animation when active */
-.menuToggle.active .hamburger:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
+/* Animación de la X */
+.menuToggle.open .hamburger:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
-.menuToggle.active .hamburger:nth-child(2) {
-    opacity: 0;
+.menuToggle.open .hamburger:nth-child(2) {
+  opacity: 0;
 }
 
-.menuToggle.active .hamburger:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
+.menuToggle.open .hamburger:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Tablet styles */
-@media screen and (max-width: 768px) {
-    .header {
-        height: 50px;
-        padding: 0 15px;
-    }
-    
-    .menuToggle {
-        display: flex;
-    }
+/* Nav oculto por defecto en móviles */
+/* Nav oculto por defecto en móviles */
+nav {
+  position: fixed;
+  top: 0; /* antes lo tenías en 60px */
+  right: -100%;
+  width: 70%;
+  height: 100vh;
+  background: rgba(0,0,0,0.95);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente */
+  align-items: center;     /* centra horizontalmente */
+  gap: 2rem;
+  transition: right 0.3s ease;
+  z-index: 900; /* debajo del botón hamburguesa */
 }
 
-/* Mobile styles */
-@media screen and (max-width: 480px) {
-    .header {
-        height: 45px;
-        padding: 0 10px;
-    }
+/* Nav visible */
+nav.open {
+  right: 0;
+}
+
+/* Mostrar el botón solo en móviles */
+@media (max-width: 768px) {
+  .menuToggle {
+    display: flex;
+  }
+}
+
+/* En escritorio el nav normal */
+@media (min-width: 769px) {
+  nav {
+    position: static;
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    background: transparent;
+    backdrop-filter: none;
+    right: 0;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
