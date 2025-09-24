@@ -5,26 +5,11 @@ import style from "./style.module.css";
 ---
 
 <header class={style.header}>
-  <NameDiv />
-
-  <button class={style.menuToggle} id="menuToggle" aria-label="Abrir menú">
+  <NameDiv/>
+  <button class={style.menuToggle} id="menuToggle">
     <span class={style.hamburger}></span>
     <span class={style.hamburger}></span>
     <span class={style.hamburger}></span>
   </button>
-
-  <!-- <Nav client:load />  -->
+  <Nav />
 </header>
-
-<script>
-const toggle = document.getElementById("menuToggle");
-const nav = document.querySelector("nav");
-
-if (toggle && nav) {
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
-    toggle.classList.toggle("open");
-  });
-}
-
-</script>
