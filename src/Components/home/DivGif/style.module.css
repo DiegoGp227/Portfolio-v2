@@ -24,3 +24,14 @@
   height: auto;
   animation: tilt 3s ease-in-out infinite;
 }
+
+@media (max-width: 768px) {
+  .img {
+    width: 100vw;
+  }
+
+  .div {
+    height: auto;
+    margin-top: 10px;
+  }
+}

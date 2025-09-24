@@ -21,3 +21,20 @@ main {
     height: 100vh;
     background-color: #0a0522;
 }
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .divInfo,
+  .divImg {
+    width: 100vw;
+    height: auto; /* se ajusta al contenido */
+    justify-content: center;
+  }
+
+  .divImg {
+    min-height: 40vh; /* asegura que el gif/fondo se vea */
+  }
+}

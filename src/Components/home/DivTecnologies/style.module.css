@@ -18,3 +18,15 @@
   scale: 1.2;
   border: 2px solid blueviolet;
 }
+
+@media (max-width: 768px) {
+  .div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    margin: 5px;
+  }
+}
