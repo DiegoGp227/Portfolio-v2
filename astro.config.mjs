@@ -3,6 +3,8 @@ import { defineConfig } from 'astro/config';
 import path from 'path';
 import tailwindcss from '@tailwindcss/vite';
 
+import react from '@astrojs/react';
+
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
@@ -19,4 +21,6 @@ export default defineConfig({
       noExternal: ['webcoreui'], // 👈 ¡Esto es lo importante!
     },
   },
+
+  integrations: [react()],
 });
