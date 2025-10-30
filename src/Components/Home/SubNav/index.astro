@@ -1,9 +1,8 @@
 ---
-import style from "./style.module.css";
 ---
 
-<nav class={style.nav} >
-  <button class={style.button} onclick={`location.href='/AboutMe'`}>Sobre Mi!</button>
-  <button class={style.button} onclick={`location.href='/Experience'`}>Proyectos!</button>
-  <button class={style.button} onclick={`location.href='/Contact'`}>Contactame!</button>
+<nav class="flex gap-2.5 md:gap-2 max-[480px]:gap-1.5">
+  <button class="text-[#f0f8ff] text-base font-medium bg-transparent py-[7px] px-2.5 cursor-pointer border-2 border-[blueviolet] rounded transition-all duration-500 hover:scale-110 hover:bg-[blueviolet] md:text-sm md:py-1.5 md:px-2 max-[480px]:text-xs max-[480px]:py-1 max-[480px]:px-1.5" onclick={`location.href='/AboutMe'`}>Sobre Mi!</button>
+  <button class="text-[#f0f8ff] text-base font-medium bg-transparent py-[7px] px-2.5 cursor-pointer border-2 border-[blueviolet] rounded transition-all duration-500 hover:scale-110 hover:bg-[blueviolet] md:text-sm md:py-1.5 md:px-2 max-[480px]:text-xs max-[480px]:py-1 max-[480px]:px-1.5" onclick={`location.href='/Experience'`}>Proyectos!</button>
+  <button class="text-[#f0f8ff] text-base font-medium bg-transparent py-[7px] px-2.5 cursor-pointer border-2 border-[blueviolet] rounded transition-all duration-500 hover:scale-110 hover:bg-[blueviolet] md:text-sm md:py-1.5 md:px-2 max-[480px]:text-xs max-[480px]:py-1 max-[480px]:px-1.5" onclick={`location.href='/Contact'`}>Contactame!</button>
 </nav>

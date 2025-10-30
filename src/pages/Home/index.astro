@@ -4,17 +4,16 @@ import DivTecnologies from "../../Components/Home/DivTecnologies/index.astro";
 import SubNav from "../../Components/Home/SubNav/index.astro";
 import NetworksButtons from "../../Components/Home/NetworksButtons/index.astro";
 import DivGif from "../../Components/Home/DivGif/index.astro";
-import style from "./_style.module.css";
 ---
 
-<main class={style.main}>
-  <div class={style.divInfo}>
+<main class="w-screen h-screen flex justify-center items-center flex-row md:flex-col">
+  <div class="w-1/2 h-screen flex flex-col justify-center items-center gap-5 md:w-screen md:h-auto md:justify-center">
     <DivText />
     <DivTecnologies />
     <SubNav />
     <NetworksButtons />
   </div>
-  <div class={style.divImg}>
+  <div class="w-1/2 h-screen bg-[#0a0522] md:w-screen md:h-auto md:min-h-[40vh] md:justify-center">
     <DivGif/>
   </div>
 </main>

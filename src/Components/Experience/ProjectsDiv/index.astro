@@ -1,19 +1,18 @@
 ---
 const { src, title, text, link, class: className } = Astro.props;
-import style from "./style.module.css";
 ---
 
-<div class={style.cardDiv}>
-  <div class={style.imgDiv}>
-    <img src={src} alt={title} class={style.img} />
+<div class="w-full max-w-[250px] min-w-[200px] h-[250px] p-2.5 bg-[hsl(278,100%,10%)] rounded-[5px] box-border flex flex-col md:max-w-[220px] md:min-w-[180px] md:h-[240px] max-[480px]:max-w-[280px] max-[480px]:min-w-[260px] max-[480px]:h-[220px] max-[480px]:mx-auto max-[320px]:max-w-[260px] max-[320px]:min-w-[240px] max-[320px]:h-[200px]">
+  <div class="h-[114px] overflow-hidden rounded-[3px] md:h-[100px] max-[480px]:h-[90px] max-[320px]:h-[80px]">
+    <img src={src} alt={title} class="w-full h-full object-cover" />
   </div>
-  <div class={style.mainDiv}>
+  <div class="h-[115px] flex flex-col justify-between flex-grow md:h-[120px] max-[480px]:h-[110px] max-[320px]:h-[100px]">
     <div>
-      <h3 class={style.titleCard}>{title}</h3>
-      <p class={style.textCard}>{text}</p>
+      <h3 class="text-[#f0f8ff] text-base font-semibold my-2 mx-0 mt-2 mb-1 md:text-[15px] max-[480px]:text-sm max-[480px]:my-1.5 max-[480px]:mx-0 max-[480px]:mt-1.5 max-[480px]:mb-[3px] max-[320px]:text-[13px]">{title}</h3>
+      <p class="text-[#f0f8ff] text-sm leading-[1.4] mb-2 flex-grow md:text-[13px] max-[480px]:text-xs max-[480px]:mb-1.5 max-[320px]:text-[11px]">{text}</p>
     </div>
     <div>
-      <button class={style.buttonInfo} onclick={`location.href='${link}'`}> Mas información </button>
+      <button class="w-full py-2 px-[5px] bg-[#1f0031] border-2 border-[blueviolet] text-[blueviolet] rounded-[5px] transition-all duration-500 cursor-pointer text-sm hover:bg-[blueviolet] hover:text-[#f0f8ff] md:py-1.5 md:px-1 md:text-[13px] max-[480px]:py-1.5 max-[480px]:px-1 max-[480px]:text-xs" onclick={`location.href='${link}'`}> Mas información </button>
     </div>
   </div>
 </div>

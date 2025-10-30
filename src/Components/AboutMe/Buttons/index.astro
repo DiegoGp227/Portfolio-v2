@@ -1,15 +1,15 @@
 ---
-import style from "./style.module.css";
 const { link,  } = Astro.props;
 ---
 
-<div class={style.div}>
-  <a href="/Assets/Hoja-de-vida.pdf" download class={style.buttons}>
+<div class="flex flex-row gap-2.5 md:gap-2 max-[480px]:gap-1.5">
+  <a href="/Assets/Hoja-de-vida.pdf" download class="py-[7px] px-2.5 bg-[#0a0522] border-2 border-[blueviolet] rounded text-[#f0f8ff] text-base font-medium flex items-center transition-all duration-500 gap-1.5 no-underline hover:bg-[blueviolet] md:text-sm md:py-1.5 md:px-2 max-[480px]:text-xs max-[480px]:py-1 max-[480px]:px-1.5">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
       viewBox="0 0 24 24"
+      class="md:w-[18px] md:h-[18px] max-[480px]:w-4 max-[480px]:h-4"
     >
       <path
         fill="currentColor"
@@ -18,13 +18,13 @@ const { link,  } = Astro.props;
     </svg>
     Descargar CV
   </a>
-  <a class={style.buttons} href=`${link}`>
+  <a class="py-[7px] px-2.5 bg-[#0a0522] border-2 border-[blueviolet] rounded text-[#f0f8ff] text-base font-medium flex items-center transition-all duration-500 gap-1.5 no-underline hover:bg-[blueviolet] md:text-sm md:py-1.5 md:px-2 max-[480px]:text-xs max-[480px]:py-1 max-[480px]:px-1.5" href=`${link}`>
     <svg
-      class={style.svg}
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"
       viewBox="0 0 24 24"
+      class="md:w-[18px] md:h-[18px] max-[480px]:w-4 max-[480px]:h-4"
       ><path
         fill="currentColor"
         d="m8 18l-6-6l6-6l1.425 1.425l-4.6 4.6L9.4 16.6zm8 0l-1.425-1.425l4.6-4.6L14.6 7.4L16 6l6 6z"

@@ -4,25 +4,22 @@ import MainInformation from "../../Components/Experience/MainInformation/index.a
 import ProjectsDiv from "../../Components/Experience/ProjectsDiv/index.astro";
 import CertificatesDiv from "../../Components/Experience/CertificatesDiv/index.astro";
 import TechnologiesDiv from "../../Components/Experience/TechnologiesDiv/index.astro";
-import style from "./_style.module.css";
 ---
 
 <Layout>
-  <main class={style.main}>
+  <main class="w-screen min-h-screen flex flex-col items-center box-border pt-20 px-5 pb-5 md:pt-[60px] md:px-[15px] md:pb-[15px] max-[480px]:pt-[50px] max-[480px]:px-2.5 max-[480px]:pb-2.5 max-[320px]:pt-[45px] max-[320px]:px-1.5 max-[320px]:pb-1.5 overflow-x-hidden">
     <MainInformation />
-    <div class={style.divTwo}>
-      <div class={style.sliderDiv}>
-        <nav class={style.subNav}>
-          <button class={style.buttonNav} id="buttonOne">Proyectos</button>
-          <button class={style.buttonNav} id="buttonTwo">Diseños</button>
-          <button class={style.buttonNav} id="buttonThree">Tecnologias</button>
+    <div class="w-full max-w-[1200px] flex justify-center mt-8 md:mt-4">
+      <div class="flex flex-col items-center w-full max-[480px]:px-1.5">
+        <nav class="flex flex-wrap justify-center gap-2.5 md:gap-1.5 max-[480px]:gap-[3px] max-[480px]:mx-[-5px]">
+          <button class="nav-button text-[blueviolet] border-2 border-[blueviolet] bg-transparent rounded py-3 px-4 md:py-2.5 md:px-3 max-[480px]:py-2 max-[480px]:px-2.5 max-[320px]:py-1.5 max-[320px]:px-2 m-1.5 md:m-[3px] max-[480px]:m-0.5 max-[320px]:m-px transition-all duration-500 cursor-pointer text-sm md:text-[13px] max-[480px]:text-xs max-[320px]:text-[11px] whitespace-nowrap min-w-[100px] md:min-w-20 max-[480px]:min-w-[70px] max-[320px]:min-w-[60px] hover:bg-[blueviolet] hover:text-[#f0f8ff] active:bg-[blueviolet] active:text-[#f0f8ff]" id="buttonOne">Proyectos</button>
+          <button class="nav-button text-[blueviolet] border-2 border-[blueviolet] bg-transparent rounded py-3 px-4 md:py-2.5 md:px-3 max-[480px]:py-2 max-[480px]:px-2.5 max-[320px]:py-1.5 max-[320px]:px-2 m-1.5 md:m-[3px] max-[480px]:m-0.5 max-[320px]:m-px transition-all duration-500 cursor-pointer text-sm md:text-[13px] max-[480px]:text-xs max-[320px]:text-[11px] whitespace-nowrap min-w-[100px] md:min-w-20 max-[480px]:min-w-[70px] max-[320px]:min-w-[60px] hover:bg-[blueviolet] hover:text-[#f0f8ff] active:bg-[blueviolet] active:text-[#f0f8ff]" id="buttonTwo">Diseños</button>
+          <button class="nav-button text-[blueviolet] border-2 border-[blueviolet] bg-transparent rounded py-3 px-4 md:py-2.5 md:px-3 max-[480px]:py-2 max-[480px]:px-2.5 max-[320px]:py-1.5 max-[320px]:px-2 m-1.5 md:m-[3px] max-[480px]:m-0.5 max-[320px]:m-px transition-all duration-500 cursor-pointer text-sm md:text-[13px] max-[480px]:text-xs max-[320px]:text-[11px] whitespace-nowrap min-w-[100px] md:min-w-20 max-[480px]:min-w-[70px] max-[320px]:min-w-[60px] hover:bg-[blueviolet] hover:text-[#f0f8ff] active:bg-[blueviolet] active:text-[#f0f8ff]" id="buttonThree">Tecnologias</button>
         </nav>
-        <div class={style.containerGeneral}>
+        <div class="flex justify-center flex-col w-full">
           <div
             id="divOne"
-            data-active={style.divActive}
-            data-inactive={style.divInactive}
-            class={style.divActive}
+            class="tab-content active w-full max-w-[900px] flex justify-center flex-wrap gap-[30px] md:gap-5 max-[480px]:gap-[15px] max-[320px]:gap-2.5 my-[30px] md:my-5 max-[480px]:my-[15px] max-[320px]:my-2.5 mx-auto px-2.5 md:px-1.5 max-[480px]:px-0"
           >
             <ProjectsDiv
               src="/Assets/booklive1.png"
@@ -58,9 +55,7 @@ import style from "./_style.module.css";
           </div>
           <div
             id="divTwo"
-            data-active={style.divActive}
-            data-inactive={style.divInactive}
-            class={style.divInactive}
+            class="tab-content w-full max-w-[900px] flex justify-center flex-wrap gap-[30px] md:gap-5 max-[480px]:gap-[15px] max-[320px]:gap-2.5 my-[30px] md:my-5 max-[480px]:my-[15px] max-[320px]:my-2.5 mx-auto px-2.5 md:px-1.5 max-[480px]:px-0"
           >
             <CertificatesDiv
               src="/Assets/GanadorHackathon.jpeg"
@@ -83,9 +78,7 @@ import style from "./_style.module.css";
           </div>
           <div
             id="divThree"
-            data-active={style.divActive}
-            data-inactive={style.divInactive}
-            class={style.divInactive}
+            class="tab-content w-full max-w-[900px] flex justify-center flex-wrap gap-[30px] md:gap-5 max-[480px]:gap-[15px] max-[320px]:gap-2.5 my-[30px] md:my-5 max-[480px]:my-[15px] max-[320px]:my-2.5 mx-auto px-2.5 md:px-1.5 max-[480px]:px-0"
           >
             <TechnologiesDiv
               title="Html"
@@ -93,7 +86,7 @@ import style from "./_style.module.css";
             >
               <svg
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -122,7 +115,7 @@ import style from "./_style.module.css";
             >
               <svg
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -159,7 +152,7 @@ import style from "./_style.module.css";
             >
               <svg
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -177,7 +170,7 @@ import style from "./_style.module.css";
             >
               <svg
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -194,7 +187,7 @@ import style from "./_style.module.css";
             <TechnologiesDiv title="Astro" link="https://astro.build/">
               <svg
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -209,7 +202,7 @@ import style from "./_style.module.css";
             <TechnologiesDiv title="React.js" link="https://react.dev/">
               <svg
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 width="13.48"
                 height="12"
@@ -231,7 +224,7 @@ import style from "./_style.module.css";
                 height="24"
                 viewBox="0 0 24 24"
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
               >
                 <path
                   fill="#fff"
@@ -249,7 +242,7 @@ import style from "./_style.module.css";
                 height="12"
                 viewBox="0 0 256 289"
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
               >
                 <path
                   fill="#539e43"
@@ -261,7 +254,7 @@ import style from "./_style.module.css";
             <TechnologiesDiv title="Express" link="https://expressjs.com/">
               <svg
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -279,7 +272,7 @@ import style from "./_style.module.css";
             <TechnologiesDiv title="MySQL" link="https://www.mysql.com/">
               <svg
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -293,7 +286,7 @@ import style from "./_style.module.css";
             <TechnologiesDiv title="Figma" link="https://www.figma.com/es-es/">
               <svg
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 width="8"
                 height="12"
@@ -322,7 +315,7 @@ import style from "./_style.module.css";
             >
               <svg
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -339,7 +332,7 @@ import style from "./_style.module.css";
             >
               <svg
                 slot="icon"
-                class={style.svg}
+                class="tech-svg w-[60px] h-[60px] md:w-[45px] md:h-[45px] max-[480px]:w-[35px] max-[480px]:h-[35px] max-[320px]:w-[30px] max-[320px]:h-[30px] transition-all duration-500 hover:scale-110 hover:brightness-120 max-[480px]:hover:scale-105"
                 xmlns="http://www.w3.org/2000/svg"
                 width="12"
                 height="12"
@@ -364,6 +357,16 @@ import style from "./_style.module.css";
       </div>
     </div>
   </main>
+  <style>
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: flex;
+    }
+  </style>
+
   <script>
     const divOne = document.getElementById("divOne") as HTMLElement;
     const divTwo = document.getElementById("divTwo") as HTMLElement;
@@ -376,12 +379,11 @@ import style from "./_style.module.css";
     const divs = [divOne, divTwo, divThree];
 
     function showDiv(activeDiv: HTMLElement) {
-      const active = activeDiv.dataset.active!;
-      const inactive = activeDiv.dataset.inactive!;
-
       divs.forEach((div) => {
-        div.classList.remove(active, inactive);
-        div.classList.add(div === activeDiv ? active : inactive);
+        div.classList.remove('active');
+        if (div === activeDiv) {
+          div.classList.add('active');
+        }
       });
     }
 

@@ -1,7 +1,20 @@
 ---
-import style from "./style.module.css";
 ---
 
-<div class={style.div} >
-  <img src="Assets/pc.svg" alt="GIF animado sin fondo" class={style.img} />
+<div class="w-full h-screen mt-5 flex justify-center items-center md:h-auto md:mt-2.5">
+  <img src="Assets/pc.svg" alt="GIF animado sin fondo" class="w-[500px] h-auto animate-[tilt_3s_ease-in-out_infinite] md:w-screen" />
 </div>
+
+<style>
+  @keyframes tilt {
+    0% {
+      transform: rotate(5deg);
+    }
+    50% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(5deg);
+    }
+  }
+</style>

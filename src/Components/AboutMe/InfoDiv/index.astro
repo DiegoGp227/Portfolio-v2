@@ -1,12 +1,11 @@
 ---
 import Buttons from "../Buttons/index.astro";
-import style from "./style.module.css";
 ---
 
-<section class={style.secction}>
-  <h1 class={style.titleOne}>Hola! Yo soy</h1>
-  <h1 class={style.titleTwo}>Diego Gongora</h1>
-  <p class={style.text}>
+<section class="w-[90%] max-w-[600px] md:w-[60vw] flex flex-col items-center gap-4 p-[15px] md:p-5 box-border">
+  <h1 class="text-[blueviolet] text-2xl font-semibold text-center md:text-xl max-[480px]:text-lg">Hola! Yo soy</h1>
+  <h1 class="text-4xl md:text-5xl max-[480px]:text-3xl text-[#f0f8ff] font-bold text-center flex items-center justify-center">Diego Gongora</h1>
+  <p class="text-center text-[#f0f8ff] text-base md:text-lg max-[480px]:text-sm leading-[1.6]">
     Soy un desarrollador web frontend enfocado en crear interfaces intuitivas,
     funcionales y visualmente atractivas. Me apasiona convertir ideas en
     experiencias digitales reales, cuidando cada detalle del diseño y la

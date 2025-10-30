@@ -1,6 +1,6 @@
 ---
 import Header from "../Components/Header/index.astro";
-import style from "./_style.module.css";
+import "../styles/global.css";
 ---
 
 <!doctype html>
@@ -17,7 +17,7 @@ import style from "./_style.module.css";
       rel="stylesheet"
     />
   </head>
-  <body class={style.body}>
+  <body class="bg-hard-purple">
     <Header />
     <slot />
   </body>

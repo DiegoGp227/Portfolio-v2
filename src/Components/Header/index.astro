@@ -1,49 +1,92 @@
 ---
 import NameDiv from "./NameDiv/index.astro";
 import Nav from "./Nav/index.astro";
-import style from "./style.module.css";
 ---
 
-<header class={style.header}>
-  <NameDiv />
+<header
+  class="w-screen h-[60px] flex justify-between items-center fixed top-0 left-0 bg-transparent backdrop-blur-[10px] z-[1000] px-5 box-border md:h-[50px] md:px-[15px] max-[480px]:h-[45px] max-[480px]:px-2.5"
+>
+  <a
+    href=""
+    class="text-3xl ml-6 no-underline text-[#f0f8ff] font-semibold transition-colors duration-300 hover:text-[blueviolet] md:text-2xl md:ml-[15px] max-[480px]:text-xl max-[480px]:ml-2.5 max-[320px]:text-lg max-[320px]:ml-1.5"
+    >Diego Gongora</a
+  >
 
-  <!-- Botón hamburguesa -->
-  <button id="menuToggle" class={style.menuToggle} aria-label="Abrir menú">
-    <span class={style.hamburger}></span>
-    <span class={style.hamburger}></span>
-    <span class={style.hamburger}></span>
-  </button>
-
-  <!-- Navegación -->
-  <Nav />
+  <nav>
+    <ul class="flex mr-6 m-0 p-0">
+      <li class="list-none px-1.5">
+        <a
+          href="/"
+          class="no-underline text-[#f0f8ff] transition-all duration-500 py-2.5 px-[15px] block hover:text-[blueviolet] hover:border-b-2 hover:border-[blueviolet]"
+          >Inicio</a
+        >
+      </li>
+      <li class="list-none px-1.5">
+        <a
+          href="/AboutMe"
+          class="no-underline text-[#f0f8ff] transition-all duration-500 py-2.5 px-[15px] block hover:text-[blueviolet] hover:border-b-2 hover:border-[blueviolet]"
+          >Sobre Mí</a
+        >
+      </li>
+      <li class="list-none px-1.5">
+        <a
+          href="/Experience"
+          class="no-underline text-[#f0f8ff] transition-all duration-500 py-2.5 px-[15px] block hover:text-[blueviolet] hover:border-b-2 hover:border-[blueviolet]"
+          >Proyectos</a
+        >
+      </li>
+      <li class="list-none px-1.5">
+        <a
+          href="/Contact"
+          class="no-underline text-[#f0f8ff] transition-all duration-500 py-2.5 px-[15px] block hover:text-[blueviolet] hover:border-b-2 hover:border-[blueviolet]"
+          >Contactame</a
+        >
+      </li>
+    </ul>
+  </nav>
 </header>
 
+<style>
+  /* Hamburger animation when active */
+  #menuToggle.active .hamburger:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  #menuToggle.active .hamburger:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menuToggle.active .hamburger:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+</style>
+
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menuToggle');
-    const nav = document.querySelector('nav');
-    
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const nav = document.querySelector("nav");
+
     if (menuToggle && nav) {
-      menuToggle.addEventListener('click', function() {
-        nav.classList.toggle('active');
-        menuToggle.classList.toggle('active');
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("active");
+        menuToggle.classList.toggle("active");
       });
 
       // Cerrar menú cuando se hace clic en un enlace
-      const navLinks = nav.querySelectorAll('a');
-      navLinks.forEach(link => {
-        link.addEventListener('click', function() {
-          nav.classList.remove('active');
-          menuToggle.classList.remove('active');
+      const navLinks = nav.querySelectorAll("a");
+      navLinks.forEach((link) => {
+        link.addEventListener("click", function () {
+          nav.classList.remove("active");
+          menuToggle.classList.remove("active");
         });
       });
 
       // Cerrar menú cuando se hace clic fuera
-      document.addEventListener('click', function(event) {
+      document.addEventListener("click", function (event) {
         const target = event.target as Node;
         if (!menuToggle.contains(target) && !nav.contains(target)) {
-          nav.classList.remove('active');
-          menuToggle.classList.remove('active');
+          nav.classList.remove("active");
+          menuToggle.classList.remove("active");
         }
       });
     }
