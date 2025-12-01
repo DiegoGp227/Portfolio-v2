@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    build: .
+    ports:
+      - "1000:80" 
+    volumes:
+      - .:/app
+    environment:
+      NODE_ENV: production
