@@ -1,5 +1,6 @@
 ---
 import Layout from "../Layout.astro";
+import ContactForm from "../../Components/Contact/molecules/ContactForm.astro";
 
 const width = 20;
 const height = 20;
@@ -121,70 +122,7 @@ const height = 20;
           </div>
         </div>
       </div>
-
-      <div
-        class="flex w-full bg-hard-purple p-5 md:order-2 md:w-1/2 md:p-[30px] lg:p-[35px] max-[480px]:p-[15px] order-1 box-border"
-      >
-        <form
-          class="contact-form w-full flex flex-col flex-wrap"
-          action="https://formsubmit.co/diego.gp227@gmail.com"
-          method="POST"
-        >
-          <label
-            for="name"
-            class="text-main-white mb-1.5 font-medium text-base md:text-base max-[480px]:text-[13px]"
-            >Nombre</label
-          >
-          <input
-            type="text"
-            id="name"
-            class="contact-input w-full p-3 md:p-3 max-[480px]:p-2.5 mt-1.5 mb-[15px] rounded border-2 border-primary bg-hard-purple text-main-white box-border text-base md:text-base max-[480px]:text-[13px] focus:outline-none focus:border-2 focus:border-transparent focus:shadow-[0_0_8px_#6d3b9c]"
-            autofocus
-          />
-
-          <label
-            for="subject"
-            class="text-main-white mb-1.5 font-medium text-base md:text-base max-[480px]:text-[13px]"
-            >Asunto</label
-          >
-          <input
-            type="text"
-            id="subject"
-            class="contact-input w-full p-3 md:p-3 max-[480px]:p-2.5 mt-1.5 mb-[15px] rounded border-2 border-primary bg-hard-purple text-main-white box-border text-base md:text-base max-[480px]:text-[13px] focus:outline-none focus:border-2 focus:border-transparent focus:shadow-[0_0_8px_#6d3b9c]"
-          />
-
-          <label
-            for="text"
-            class="text-main-white mb-1.5 font-medium text-base md:text-base max-[480px]:text-[13px]"
-            >Texto</label
-          >
-          <textarea
-            name="text"
-            id="text"
-            class="contact-input w-full h-[120px] max-w-full max-h-[150px] min-h-20 min-w-full resize-y p-3 md:p-3 max-[480px]:p-2.5 mt-1.5 mb-[15px] rounded border-2 border-primary bg-hard-purple text-main-white box-border text-base md:text-base max-[480px]:text-[13px] focus:outline-none focus:border-2 focus:border-transparent focus:shadow-[0_0_8px_#6d3b9c]"
-          ></textarea>
-          <button
-            class="contact-button flex justify-center items-center gap-2 py-3 px-5 md:py-3 md:px-5 max-[480px]:py-2.5 max-[480px]:px-[15px] w-fullbg-hard-purple border-2 border-primary mt-5 rounded text-primary cursor-pointer transition-all duration-500 text-base md:text-base max-[480px]:text-[13px] font-semibold box-border hover:text-main-white"
-            type="submit"
-          >
-            Enviar!
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              ><g fill="none"
-                ><path
-                  d="m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z"
-                ></path><path
-                  fill="blueviolet"
-                  d="M20.235 5.686c.432-1.195-.726-2.353-1.921-1.92L3.709 9.048c-1.199.434-1.344 2.07-.241 2.709l4.662 2.699l4.163-4.163a1 1 0 0 1 1.414 1.414L9.544 15.87l2.7 4.662c.638 1.103 2.274.957 2.708-.241z"
-                ></path></g
-              ></svg
-            >
-          </button>
-        </form>
-      </div>
+      <ContactForm />
     </main>
   </div>
 
@@ -202,15 +140,6 @@ const height = 20;
       animation: spin 20s linear infinite;
     }
 
-    .contact-input:focus {
-      background-image: linear-gradient(#0a0522, #0a0522),
-        linear-gradient(to right, blueviolet, #6d3b9c);
-      background-origin: border-box;
-      background-clip: padding-box, border-box;
-    }
-
-    .contact-button:hover path {
-      fill: #ffff;
-    }
+    
   </style>
 </Layout>

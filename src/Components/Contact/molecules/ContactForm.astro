@@ -1,0 +1,78 @@
+<div
+  class="flex w-full bg-hard-purple p-5 md:order-2 md:w-1/2 md:p-[30px] lg:p-[35px] max-[480px]:p-[15px] order-1 box-border"
+>
+  <form
+    class="contact-form w-full flex flex-col flex-wrap"
+    action="https://formsubmit.co/diego.gp227@gmail.com"
+    method="POST"
+  >
+    <!-- NOMBRE -->
+    <label
+      for="name"
+      class="text-main-white mb-1.5 font-medium text-base md:text-base max-[480px]:text-[13px]"
+      >Nombre</label
+    >
+    <input
+      type="text"
+      id="name"
+      class="contact-input w-full p-3 md:p-3 max-[480px]:p-2.5 mt-1.5 mb-[15px]
+             rounded border-2 border-primary bg-hard-purple text-main-white box-border
+             text-base md:text-base max-[480px]:text-[13px]
+             focus:outline-none 
+             focus:shadow-[0_0_8px_#a87bff]"
+      autofocus
+    />
+
+    <!-- ASUNTO -->
+    <label
+      for="subject"
+      class="text-main-white mb-1.5 font-medium text-base md:text-base max-[480px]:text-[13px]"
+      >Asunto</label
+    >
+    <input
+      type="text"
+      id="subject"
+       class="contact-input w-full p-3 md:p-3 max-[480px]:p-2.5 mt-1.5 mb-[15px]
+             rounded border-2 border-primary bg-hard-purple text-main-white box-border
+             text-base md:text-base max-[480px]:text-[13px]
+             focus:outline-none 
+             focus:shadow-[0_0_8px_#a87bff]"
+    />
+
+    <!-- TEXTO -->
+    <label
+      for="text"
+      class="text-main-white mb-1.5 font-medium text-base md:text-base max-[480px]:text-[13px]"
+      >Texto</label
+    >
+    <textarea
+      name="text"
+      id="text"
+      class="contact-input w-full h-[120px] max-w-full max-h-[150px] min-h-20 min-w-full resize-y
+             p-3 md:p-3 max-[480px]:p-2.5 mt-1.5 mb-[15px]
+             rounded border-2 border-primary bg-hard-purple text-main-white box-border
+             text-base md:text-base max-[480px]:text-[13px]
+             focus:outline-none 
+             focus:shadow-[0_0_8px_#a87bff]"
+    ></textarea>
+
+    <!-- BOTÓN -->
+    <button
+      class="contact-button group flex justify-center items-center gap-2
+             py-3 px-5 md:py-3 md:px-5 max-[480px]:py-2.5 max-[480px]:px-[15px]
+             w-full bg-hard-purple border-2 border-primary mt-5 rounded text-primary
+             cursor-pointer transition-all duration-500 text-base md:text-base
+             max-[480px]:text-[13px] font-semibold box-border hover:text-main-white"
+      type="submit"
+    >
+      Enviar!
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+        <path
+          class="transition-colors duration-500 group-hover:fill-white"
+          fill="blueviolet"
+          d="M20.235 5.686c.432-1.195-.726-2.353-1.921-1.92L3.709 9.048c-1.199.434-1.344 2.07-.241 2.709l4.662 2.699l4.163-4.163a1 1 0 0 1 1.414 1.414L9.544 15.87l2.7 4.662c.638 1.103 2.274.957 2.708-.241z"
+        ></path>
+      </svg>
+    </button>
+  </form>
+</div>
