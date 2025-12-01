@@ -1,0 +1,27 @@
+---
+import InfoPage from "../../../Components/Projects/molecules/InfoPage.astro";
+import FeaturesServer from "../../../Components/Projects/molecules/FeaturesServer.astro";
+import ImgDiv from "../../../Components/Projects/ImgDiv/ImgDiv.astro";
+import Layout from "../../Layout.astro";
+import TecnologiesTaskly from "../../../Components/Projects/molecules/TecnologiesTaskly.astro";
+---
+
+<Layout>
+  <div class="w-screen flex mt-10">
+    <div class="w-1/2 flex flex-col justify-center items-center p-3">
+      <InfoPage
+        title="Server Autohosteado"
+        text="Desarrollé una plataforma de servidores autohospedados utilizando una Raspberry Pi 5 como nodo principal, donde cada proyecto se ejecuta dentro de contenedores Docker aislados y gestionados con Docker Compose. La infraestructura cuenta con un túnel seguro de Cloudflare que permite acceso remoto estable mediante dominio con IP fija, además de una arquitectura ligera y de bajo consumo pensada para proyectos reales en producción. Integré un pipeline completo de CI/CD que, al realizar push a la rama main, ejecuta pruebas, construye las imágenes y despliega automáticamente las nuevas versiones en la Raspberry Pi, enviando notificaciones en tiempo real a Telegram sobre el estado del proceso."
+        linkPage="https://taskly.devdiego.work/login"
+        linkGit="https://github.com/DiegoGp227/taskly-v2"
+      />
+      <TecnologiesTaskly />
+    </div>
+
+    <div class="w-1/2 flex justify-center items-center flex-col">
+      <ImgDiv src="/public/Projects/ServerCasero.jpg" />
+
+      <FeaturesServer />
+    </div>
+  </div>
+</Layout>
