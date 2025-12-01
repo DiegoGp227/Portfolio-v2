@@ -1,8 +1,7 @@
 ---
-import Layout from "../../../layouts/Layout.astro";
-import WithPage from "../../../Components/Projects/MainInformation/WithPage/index.astro";
+import PageInfo from "../../../Components/Projects/molecules/PageInfo.astro";
 import SecondInformation from "../../../Components/Projects/SecondInformation/index.astro";
-import ImgDiv from "../../../Components/Projects/ImgDiv/index.astro";
+import ImgDiv from "../../../Components/Projects/ImgDiv/ImgDiv.astro";
 import Html from "../../../Components/Projects/Technologies/Html/index.astro";
 import Css from "../../../Components/Projects/Technologies/Css/index.astro";
 import Javascript from "../../../Components/Projects/Technologies/Javascript/index.astro";
@@ -10,22 +9,25 @@ import React from "../../../Components/Projects/Technologies/React/index.astro";
 import Node from "../../../Components/Projects/Technologies/Node/index.astro";
 import Express from "../../../Components/Projects/Technologies/Express/index.astro";
 import Mysql from "../../../Components/Projects/Technologies/Mysql/index.astro";
-import style from "./_style.module.css";
+import Layout from "../../Layout.astro";
 ---
 
 <Layout>
-  <div class={style.divGeneral}>
-    <div class={style.divLeft}>
-      <WithPage
+  <div class="w-screen flex mt-10">
+    <div class="w-1/2 flex flex-col justify-center items-center p-3">
+      <PageInfo
         title="Taskly"
         text="Taskly es una aplicación web que te ayuda a organizar tus tareas agrupándolas por temas. Cada tema tiene su propia vista, permitiéndote separar claramente distintas áreas y concentrarte solo en lo relevante en cada momento. Con una interfaz simple y enfoque estructurado, Taskly te ofrece orden, claridad y control sobre tus pendientes."
-        link="https://github.com/DiegoGp227/taskly"
+        linkPage="https://taskly.devdiego.work/login"
+        linkGit="https://github.com/DiegoGp227/taskly-v2"
       />
+
       <div>
-        <div class={style.divTitleTechnologies}>
-          <h2 class={style.titleTechnologies}>Tecnologies</h2>
+        <div class="w-full my-5 flex justify-center items-center">
+          <h2 class="text-[aliceblue] text-2xl font-semibold">Tecnologias</h2>
         </div>
-        <div class={style.secctionTechnologies}>
+
+        <div class="flex gap-5 flex-wrap justify-center w-[90%]">
           <Css />
           <Html />
           <Javascript />
@@ -36,7 +38,8 @@ import style from "./_style.module.css";
         </div>
       </div>
     </div>
-    <div class={style.divRight}>
+
+    <div class="w-1/2 flex justify-center items-center flex-col">
       <ImgDiv src="/Assets/taskly.png" />
       <SecondInformation />
     </div>
