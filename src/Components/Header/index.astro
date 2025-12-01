@@ -1,46 +1,37 @@
 ---
+let isOpen = false;
 
+function toggleMenu() {
+  isOpen = !isOpen;
+}
 ---
 
-<header
-  class="w-screen sticky h-[60px] flex justify-between items-center top-0 left-0 bg-transparent backdrop-blur-[10px] px-5 box-border"
->
-  <a
-    href="/"
-    class="text-3xl ml-6 text-main-white font-semibold transition-colors duration-300 hover:text-primary"
-    >Diego Gongora</a
-  >
+<header class="w-screen sticky top-0 left-0 h-[60px] flex justify-between items-center px-5 bg-transparent backdrop-blur-[10px] z-50">
+  <!-- Logo / Nombre -->
+  <a href="/" class="text-3xl text-main-white font-semibold transition-colors duration-300 hover:text-primary">
+    Diego Gongora
+  </a>
 
-  <nav class="mr-6">
-    <ul class="flex m-0 p-0 gap-5">
-      <li class="list-none ml-4">
-        <a
-          href="/"
-          class="no-underline text-main-white transition-all duration-500 py-2.5 px-[15px] block hover:text-primary hover:border-b-2 hover:border-primary"
-          >Inicio</a
-        >
-      </li>
-      <li class="list-none ml-4">
-        <a
-          href="/AboutMe"
-          class="no-underline text-main-white transition-all duration-500 py-2.5 px-[15px] block hover:text-primary hover:border-b-2 hover:border-primary"
-          >Sobre Mí</a
-        >
-      </li>
-      <li class="list-none ml-4">
-        <a
-          href="/Experience"
-          class="no-underline text-main-white transition-all duration-500 py-2.5 px-[15px] block hover:text-primary hover:border-b-2 hover:border-primary"
-          >Proyectos</a
-        >
-      </li>
-      <li class="list-none ml-4">
-        <a
-          href="/Contact"
-          class="no-underline text-main-white transition-all duration-500 py-2.5 px-[15px] block hover:text-primary hover:border-b-2 hover:border-primary"
-          >Contactame</a
-        >
-      </li>
+  <!-- Botón hamburguesa en móviles -->
+  <button 
+    class="md:hidden flex flex-col justify-between w-6 h-6" 
+    on:click={toggleMenu}
+  >
+    <span class="block w-full h-0.5 bg-main-white"></span>
+    <span class="block w-full h-0.5 bg-main-white"></span>
+    <span class="block w-full h-0.5 bg-main-white"></span>
+  </button>
+
+  <!-- Menú de navegación -->
+  <nav 
+    id="menu-movil"
+    class={`absolute top-[60px] left-0 w-full bg-hard-purple md:static md:w-auto md:flex transition-all duration-300 ${isOpen ? 'block' : 'hidden'} md:block`}
+  >
+    <ul class="flex flex-col md:flex-row m-0 p-0 md:gap-5">
+      <li><a href="/" class="block text-main-white py-2 px-4 hover:text-primary">Inicio</a></li>
+      <li><a href="/AboutMe" class="block text-main-white py-2 px-4 hover:text-primary">Sobre Mí</a></li>
+      <li><a href="/Experience" class="block text-main-white py-2 px-4 hover:text-primary">Proyectos</a></li>
+      <li><a href="/Contact" class="block text-main-white py-2 px-4 hover:text-primary">Contáctame</a></li>
     </ul>
   </nav>
 </header>
