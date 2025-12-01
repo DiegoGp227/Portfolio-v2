@@ -8,19 +8,25 @@ import TecnologiesKila from "../../../Components/Projects/molecules/TecnologiesK
 
 <Layout>
   <div class="w-screen flex mt-10">
-    <div class="w-1/2 flex flex-col justify-center items-center p-3">
-      <InfoPage
-        title="Kila"
-        text="Validador de facturas es una herramienta web que te permite revisar y validar tus facturas electrónicas según los requisitos exigidos por la DIAN. La aplicación no solo detecta errores y advertencias en el JSON, sino que también guarda un historial de validaciones para que puedas consultar resultados anteriores. Con un dashboard interactivo, puedes visualizar de manera clara los errores, advertencias y estadísticas de tus facturas."
-        linkPage="https://kila.coinmaster.devdiego.work/"
-        linkGit="https://github.com/DiegoGp227/KILA"
-      />
-      <TecnologiesKila />
-    </div>
+    <div class="flex flex-col lg:flex-row items-center">
+      <div
+        class="w-screen flex flex-col justify-center items-center p-5 lg:w-1/2"
+      >
+        <InfoPage
+          title="Kila"
+          text="Validador de facturas es una herramienta web que te permite revisar y validar tus facturas electrónicas según los requisitos exigidos por la DIAN. La aplicación no solo detecta errores y advertencias en el JSON, sino que también guarda un historial de validaciones para que puedas consultar resultados anteriores. Con un dashboard interactivo, puedes visualizar de manera clara los errores, advertencias y estadísticas de tus facturas."
+          linkPage="https://kila.coinmaster.devdiego.work/"
+          linkGit="https://github.com/DiegoGp227/KILA"
+        />
+        <TecnologiesKila />
+      </div>
 
-    <div class="w-1/2 flex justify-center items-center flex-col">
-      <ImgDiv src="/Projects/Kila.png" />
-      <FeaturesKila />
+      <div
+        class="w-full flex justify-center items-center flex-col p-5 lg:w-1/2"
+      >
+        <ImgDiv src="/Projects/Kila.png" />
+        <FeaturesKila />
+      </div>
     </div>
   </div>
 </Layout>

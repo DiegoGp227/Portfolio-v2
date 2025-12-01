@@ -1,7 +1,7 @@
 ---
-import style from "./style.module.css";
 const { src } = Astro.props;
 ---
-<div class={style.divImg}>
-  <img src={src} alt="Time track img" class={style.img} />
+
+<div class="w-full max-w-[500px]">
+  <img src={src} alt="Time track img" class="w-full rounded-[5px] max-w-[500px]" />
 </div>

@@ -18,16 +18,16 @@ const { title, text, linkPage, linkGit } = Astro.props;
   </div>
 
   <!-- Botones -->
-  <div class="w-full h-[50px] flex justify-around">
+  <div class="w-full flex flex-col sm:flex-row gap-3">
     <button
-      class="w-[48%] h-[30px] py-4 text-primary bg-hard-purple border-2 border-primary rounded-md transition duration-500 hover:bg-primary hover:text-[antiquewhite] cursor-pointer flex justify-center items-center",
+      class="w-full sm:w-[48%] h-10 py-2 text-primary bg-hard-purple border-2 border-primary rounded-md transition duration-500 hover:bg-primary hover:text-[antiquewhite] cursor-pointer flex justify-center items-center"
       onclick={`window.open('${linkPage}', '_blank')`}
     >
       Page
     </button>
 
     <button
-      class="w-[48%] h-[30px] py-4 text-primary bg-hard-purple border-2 border-primary rounded-md transition duration-500 hover:bg-primary hover:text-[antiquewhite] cursor-pointer flex justify-center items-center"
+      class="w-full sm:w-[48%] h-10 py-2 text-primary bg-hard-purple border-2 border-primary rounded-md transition duration-500 hover:bg-primary hover:text-[antiquewhite] cursor-pointer flex justify-center items-center"
       onclick={`window.open('${linkGit}', '_blank')`}
     >
       Github
