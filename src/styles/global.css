@@ -1,14 +1,5 @@
-@import "tailwindcss/theme" layer(theme);
-@import "tailwindcss/preflight" layer(base);
-@import "tailwindcss/utilities" layer(utilities);
-
-@layer theme {
-  :root {
-    --main-white: #f0f8ff;
-    --hard-purple: #0a0522;
-    --soft-purple: #8a2be2;
-  }
-}
+@import "tailwindcss";
+@import "./theme.css";
 
 /* Reset / Normalización básica */
 * {
@@ -34,10 +25,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 /* Imágenes y multimedia */
