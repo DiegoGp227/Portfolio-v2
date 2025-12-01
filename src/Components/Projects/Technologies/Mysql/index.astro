@@ -1,11 +1,10 @@
----
-import style from "./style.module.css";
----
-
-<div class={style.divTechnologies}>
+<div
+  class="flex items-center gap-2 p-2 rounded-md border-2 border-[#8A2BE2] bg-transparent
+transition duration-500 hover:bg-[#7b4ac5] cursor-pointer group"
+>
   <svg
     slot="icon"
-    class={style.svg}
+    class="w-[30px] h-[30px] object-contain"
     xmlns="http://www.w3.org/2000/svg"
     width="12.2"
     height="12"
@@ -18,5 +17,9 @@ import style from "./style.module.css";
       d="M58.186 43.022c-2.957 0-5.044.35-7.132.871v.348h.348c1.393 2.784 3.827 4.698 5.566 7.133c1.393 2.783 2.61 5.568 4.003 8.352c.173-.175.347-.348.347-.348c2.437-1.741 3.654-4.524 3.654-8.7c-1.044-1.217-1.218-2.435-2.088-3.653c-1.043-1.741-3.306-2.61-4.698-4.003"
     ></path></svg
   >
-  <p class={style.text}>Mysql</p>
+  <p
+    class="text-xl text-[#8A2BE2] transition duration-500 group-hover:text-white"
+  >
+    Mysql
+  </p>
 </div>

@@ -1,5 +1,5 @@
 ---
-import InfoPage from "../../../Components/Projects/molecules/InfoPage.astro";
+import InfoServePage from "../../../Components/Projects/molecules/InfoServePage.astro";
 import FeaturesServer from "../../../Components/Projects/molecules/FeaturesServer.astro";
 import ImgDiv from "../../../Components/Projects/ImgDiv/ImgDiv.astro";
 import Layout from "../../Layout.astro";
@@ -9,7 +9,7 @@ import TecnologiesTaskly from "../../../Components/Projects/molecules/Tecnologie
 <Layout>
   <div class="w-screen flex mt-10">
     <div class="w-1/2 flex flex-col justify-center items-center p-3">
-      <InfoPage
+      <InfoServePage
         title="Server Autohosteado"
         text="Este proyecto consiste en una infraestructura autohospedada montada sobre una Raspberry Pi 5, optimizada para alojar aplicaciones reales en producción mediante una arquitectura modular basada en Docker. Cada aplicación cuenta con su propio frontend, backend y base de datos en contenedores independientes, gestionados con Docker Compose. El sistema utiliza un túnel seguro administrado por Cloudflare, una IP fija para acceso remoto y está diseñado para operar con bajo consumo energético. Además, incorpora Integración Continua y Despliegue Continuo al actualizar la rama main, junto con notificaciones automáticas que informan del estado de cada despliegue, ofreciendo un entorno completamente automatizado, escalable y profesional."
         linkPage="https://taskly.devdiego.work/login"

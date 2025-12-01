@@ -1,0 +1,19 @@
+---
+const { title, text, linkPage, linkGit } = Astro.props;
+---
+
+<div class="w-full flex flex-col gap-5">
+  <!-- Título -->
+  <div class="w-full my-2.5 h-[50px] flex justify-center">
+    <h1 class="text-primary text-[50px] font-bold">
+      {title}
+    </h1>
+  </div>
+
+  <!-- Texto -->
+  <div class="w-full my-2.5">
+    <p class="text-[aliceblue] text-center">
+      {text}
+    </p>
+  </div>
+</div>

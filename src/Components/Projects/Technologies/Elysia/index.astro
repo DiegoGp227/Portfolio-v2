@@ -1,11 +1,10 @@
----
-import style from "./style.module.css";
----
-
-<div class={style.divTechnologies}>
+<div
+  class="flex items-center gap-2 p-2 rounded-md border-2 border-[#8A2BE2] bg-transparent
+transition duration-500 hover:bg-[#7b4ac5] cursor-pointer group"
+>
   <svg
     slot="icon"
-    class={style.svg}
+    class="w-[30px] h-[30px] object-contain"
     xmlns="http://www.w3.org/2000/svg"
     width="256"
     height="256"
@@ -112,5 +111,9 @@ import style from "./style.module.css";
       ></g
     ></svg
   >
-  <p class={style.text}>Elysia</p>
+  <p
+    class="text-xl text-[#8A2BE2] transition duration-500 group-hover:text-white"
+  >
+    Elysia
+  </p>
 </div>
