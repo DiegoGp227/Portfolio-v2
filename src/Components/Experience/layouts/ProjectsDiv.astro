@@ -1,0 +1,35 @@
+---
+const { src, title, text, link, class: className } = Astro.props;
+---
+
+<div
+  class="w-full max-w-[250px] min-w-[200px] h-[250px] p-[10px] bg-[hsl(278,100%,10%)] rounded-[5px] box-border flex flex-col"
+>
+  <div class="h-[114px] p-2 overflow-hidden rounded-[3px]">
+    <img src={src} alt={title} class="w-full h-full object-cover" />
+  </div>
+  <div
+    class="h-[115px] flex flex-col justify-between grow md:h-[120px] max-[480px]:h-[110px] max-[320px]:h-[100px]"
+  >
+    <div>
+      <h3
+        class="text-main-white text-base font-semibold my-2 mx-0 mt-2 mb-1 md:text-[15px] max-[480px]:text-sm max-[480px]:my-1.5 max-[480px]:mx-0 max-[480px]:mt-1.5 max-[480px]:mb-[3px] max-[320px]:text-[13px]"
+      >
+        {title}
+      </h3>
+      <p
+        class="text-main-white text-sm leading-[1.4] mb-2 grow md:text-[13px] max-[480px]:text-xs max-[480px]:mb-1.5 max-[320px]:text-[11px]"
+      >
+        {text}
+      </p>
+    </div>
+    <div>
+      <button
+        class="w-full py-2 px-[5px] bg-[#1f0031] border-2 border-primary text-primary rounded-[5px] transition-all duration-500 cursor-pointer text-sm hover:bg-primary hover:text-main-white md:py-1.5 md:px-1 md:text-[13px] max-[480px]:py-1.5 max-[480px]:px-1 max-[480px]:text-xs"
+        onclick={`location.href='${link}'`}
+      >
+        Mas información
+      </button>
+    </div>
+  </div>
+</div>

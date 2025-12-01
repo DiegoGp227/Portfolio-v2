@@ -4,5 +4,5 @@ const { title, link } = Astro.props;
 
 <div class="w-20 min-w-[60px] text-center cursor-pointer flex flex-col items-center gap-2 p-2.5 rounded-lg transition-all duration-300 hover:bg-[rgba(138,43,226,0.1)] hover:-translate-y-0.5 md:w-[70px] md:min-w-[55px] md:p-2 md:gap-1.5 max-[480px]:w-[60px] max-[480px]:min-w-[50px] max-[480px]:p-1.5 max-[480px]:gap-1 max-[320px]:w-[55px] max-[320px]:min-w-[45px] max-[320px]:p-[5px]" onclick={`window.location.href='${link}'`}>
   <slot name="icon" />
-  <p class="text-base text-[#f0f8ff] m-0 text-center leading-[1.2] md:text-sm max-[480px]:text-xs max-[480px]:leading-[1.1] max-[320px]:text-[11px]">{title}</p>
+  <p class="text-base text-main-white m-0 text-center leading-[1.2] md:text-sm max-[480px]:text-xs max-[480px]:leading-[1.1] max-[320px]:text-[11px]">{title}</p>
 </div>
