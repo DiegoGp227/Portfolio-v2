@@ -1,18 +1,27 @@
 ---
 import Layout from "../Layout.astro";
 
-
 const width = 20;
 const height = 20;
 ---
 
 <Layout>
-  <div class="w-screen min-h-screen flex flex-col items-center pt-20 px-5 pb-5 md:pt-[100px] md:px-10 md:pb-10 lg:pt-[120px] lg:px-[60px] lg:pb-[60px] max-[480px]:pt-[60px] max-[480px]:px-[15px] max-[480px]:pb-[15px] box-border overflow-x-hidden">
+  <div
+    class="w-screen min-h-screen flex flex-col items-center pt-20 px-5 pb-5 md:pt-[100px] md:px-10 md:pb-10 lg:pt-[120px] lg:px-[60px] lg:pb-[60px] max-[480px]:pt-[60px] max-[480px]:px-[15px] max-[480px]:pb-[15px] box-border overflow-x-hidden"
+  >
     <div class="w-full h-auto flex justify-center items-center mb-8 py-5">
-      <h1 class="text-5xl font-bold md:text-[45px] lg:text-[50px] max-[480px]:text-[28px] text-[blueviolet] text-center">Contactame!</h1>
+      <h1
+        class="text-5xl font-bold md:text-[45px] lg:text-[50px] max-[480px]:text-[28px] text-primary text-center"
+      >
+        Contactame!
+      </h1>
     </div>
-    <main class="contact-main w-full max-w-[800px] bg-[#0a0522] bg-gradient-to-r from-[#2f0a51] to-[#6d3b9c] rounded-[20px] max-[480px]:rounded-[15px] flex flex-col md:flex-row md:justify-between box-border">
-      <div class="flex flex-col justify-center content-center items-center w-full p-5 md:order-1 md:w-1/2 md:p-[30px] lg:p-[35px] max-[480px]:p-[15px] order-2">
+    <main
+      class="contact-main w-full max-w-[800px] bg-hard-purple bg-linear-to-r from-[#2f0a51] to-primary rounded-[20px] max-[480px]:rounded-[15px] flex flex-col md:flex-row md:justify-between box-border"
+    >
+      <div
+        class="flex flex-col justify-center content-center items-center w-full p-5 md:order-1 md:w-1/2 md:p-[30px] lg:p-[35px] max-[480px]:p-[15px] order-2"
+      >
         <div>
           <svg
             class="react-icon h-20 w-20 md:h-[100px] md:w-[100px] lg:h-[120px] lg:w-[120px] max-[480px]:h-[60px] max-[480px]:w-[60px] mb-4"
@@ -29,10 +38,14 @@ const height = 20;
             ></path>
           </svg>
         </div>
-        <div class="w-full max-w-[300px] md:max-w-none flex flex-col justify-items-center items-center md:items-start p-2.5 gap-[7px]">
-          <div class="contact-red-div rounded flex justify-start items-center w-full max-w-[280px] md:max-w-none gap-[15px] md:gap-5 py-3 px-[15px] md:py-3 md:px-[15px] max-[480px]:py-2.5 max-[480px]:px-3 transition-all duration-[0.4s] ease box-border hover:bg-[#7b4ac5]">
+        <div
+          class="w-full max-w-[300px] md:max-w-none flex flex-col justify-items-center items-center md:items-start p-2.5 gap-[7px]"
+        >
+          <div
+            class="contact-red-div rounded flex justify-start items-center w-full max-w-[280px] md:max-w-none gap-[15px] md:gap-5 py-3 px-[15px] md:py-3 md:px-[15px] max-[480px]:py-2.5 max-[480px]:px-3 transition-all duration-[0.4s] ease box-border hover:bg-[#7b4ac5]"
+          >
             <svg
-              class="w-[25px] h-[25px] flex-shrink-0"
+              class="w-[25px] h-[25px]"
               xmlns="http://www.w3.org/2000/svg"
               width={width}
               height={height}
@@ -45,11 +58,17 @@ const height = 20;
                 d="M21.06 48.73h18.11V107H21.06zm9.06-29a10.5 10.5 0 1 1-10.5 10.49a10.5 10.5 0 0 1 10.5-10.49m20.41 29h17.36v8h.24c2.42-4.58 8.32-9.41 17.13-9.41C103.6 47.28 107 59.35 107 75v32H88.89V78.65c0-6.75-.12-15.44-9.41-15.44s-10.87 7.36-10.87 15V107H50.53z"
               ></path></svg
             >
-            <a href="www.linkedin.com/in/diego-gongora-p" class="no-underline text-main-white font-medium text-base md:text-base max-[480px]:text-[13px]">diego-gongora</a>
+            <a
+              href="www.linkedin.com/in/diego-gongora-p"
+              class="no-underline text-main-white font-medium text-base md:text-base max-[480px]:text-[13px]"
+              >diego-gongora</a
+            >
           </div>
-          <div class="contact-red-div rounded flex justify-start items-center w-full max-w-[280px] md:max-w-none gap-[15px] md:gap-5 py-3 px-[15px] md:py-3 md:px-[15px] max-[480px]:py-2.5 max-[480px]:px-3 transition-all duration-[0.4s] ease box-border hover:bg-[#7b4ac5]">
+          <div
+            class="contact-red-div rounded flex justify-start items-center w-full max-w-[280px] md:max-w-none gap-[15px] md:gap-5 py-3 px-[15px] md:py-3 md:px-[15px] max-[480px]:py-2.5 max-[480px]:px-3 transition-all duration-[0.4s] ease box-border hover:bg-[#7b4ac5]"
+          >
             <svg
-              class="w-[25px] h-[25px] flex-shrink-0"
+              class="w-[25px] h-[25px]"
               xmlns="http://www.w3.org/2000/svg"
               width={width}
               height={height}
@@ -59,11 +78,17 @@ const height = 20;
                 d="M20 10.25q0 3.351-1.908 6.027t-4.928 3.703q-.352.068-.514-.093a.54.54 0 0 1-.163-.4V16.67q0-1.295-.677-1.895a9 9 0 0 0 1.335-.24q.591-.16 1.223-.52a3.7 3.7 0 0 0 1.055-.888q.423-.528.69-1.402t.267-2.008q0-1.616-1.028-2.75q.48-1.214-.105-2.723q-.364-.12-1.054.147a7 7 0 0 0-1.198.587l-.495.32a9 9 0 0 0-2.5-.346a9 9 0 0 0-2.5.347a12 12 0 0 0-.553-.36q-.345-.214-1.088-.514q-.741-.3-1.12-.18q-.572 1.507-.09 2.722q-1.03 1.134-1.03 2.75q0 1.134.268 2.002q.267.867.683 1.401a3.5 3.5 0 0 0 1.048.894q.632.36 1.224.52q.593.162 1.335.241q-.52.48-.638 1.375a2.5 2.5 0 0 1-.586.2a3.6 3.6 0 0 1-.742.067q-.43 0-.853-.287q-.423-.288-.723-.834a2.1 2.1 0 0 0-.631-.694q-.384-.267-.645-.32l-.26-.04q-.273 0-.378.06t-.065.153a.7.7 0 0 0 .117.187a1 1 0 0 0 .17.16l.09.066q.287.135.567.508q.28.374.41.68l.13.307q.17.507.574.821q.404.315.872.4q.468.087.905.094q.436.006.723-.047l.299-.053q0 .507.007 1.188l.006.72q0 .24-.17.4q-.168.162-.52.094q-3.021-1.028-4.928-3.703Q0 13.6 0 10.25q0-2.79 1.341-5.145a10.1 10.1 0 0 1 3.64-3.73A9.6 9.6 0 0 1 10 0a9.6 9.6 0 0 1 5.02 1.375a10.1 10.1 0 0 1 3.639 3.73Q20 7.461 20 10.25"
               ></path></svg
             >
-            <a href="https://github.com/DiegoGp227" class="no-underline text-main-white font-medium text-base md:text-base max-[480px]:text-[13px]">DiegoGp227</a>
+            <a
+              href="https://github.com/DiegoGp227"
+              class="no-underline text-main-white font-medium text-base md:text-base max-[480px]:text-[13px]"
+              >DiegoGp227</a
+            >
           </div>
-          <div class="contact-red-div rounded flex justify-start items-center w-full max-w-[280px] md:max-w-none gap-[15px] md:gap-5 py-3 px-[15px] md:py-3 md:px-[15px] max-[480px]:py-2.5 max-[480px]:px-3 transition-all duration-[0.4s] ease box-border hover:bg-[#7b4ac5]">
+          <div
+            class="contact-red-div rounded flex justify-start items-center w-full max-w-[280px] md:max-w-none gap-[15px] md:gap-5 py-3 px-[15px] md:py-3 md:px-[15px] max-[480px]:py-2.5 max-[480px]:px-3 transition-all duration-[0.4s] ease box-border hover:bg-[#7b4ac5]"
+          >
             <svg
-              class="w-[25px] h-[25px] flex-shrink-0"
+              class="w-[25px] h-[25px]"
               xmlns="http://www.w3.org/2000/svg"
               width={width}
               height={height}
@@ -90,38 +115,58 @@ const height = 20;
             >
             <a
               href="https://mail.google.com/mail/?view=cm&fs=1&to=diego.gp227@gmail.com"
-              class="no-underline text-main-white font-medium text-base md:text-base max-[480px]:text-[13px]">diego.gp227@gmail.com</a>
+              class="no-underline text-main-white font-medium text-base md:text-base max-[480px]:text-[13px]"
+              >diego.gp227@gmail.com</a
+            >
           </div>
         </div>
       </div>
 
-      <div class="flex w-full bg-[#0a0522] p-5 md:order-2 md:w-1/2 md:p-[30px] lg:p-[35px] max-[480px]:p-[15px] order-1 box-border">
+      <div
+        class="flex w-full bg-hard-purple p-5 md:order-2 md:w-1/2 md:p-[30px] lg:p-[35px] max-[480px]:p-[15px] order-1 box-border"
+      >
         <form
           class="contact-form w-full flex flex-col flex-wrap"
           action="https://formsubmit.co/diego.gp227@gmail.com"
           method="POST"
         >
-          <label for="name" class="text-main-white mb-1.5 font-medium text-base md:text-base max-[480px]:text-[13px]">Nombre</label>
+          <label
+            for="name"
+            class="text-main-white mb-1.5 font-medium text-base md:text-base max-[480px]:text-[13px]"
+            >Nombre</label
+          >
           <input
             type="text"
             id="name"
-            class="contact-input w-full p-3 md:p-3 max-[480px]:p-2.5 mt-1.5 mb-[15px] rounded border-2 border-primary bg-[#0a0522] text-main-white box-border text-base md:text-base max-[480px]:text-[13px] focus:outline-none focus:border-2 focus:border-transparent focus:shadow-[0_0_8px_#6d3b9c]"
+            class="contact-input w-full p-3 md:p-3 max-[480px]:p-2.5 mt-1.5 mb-[15px] rounded border-2 border-primary bg-hard-purple text-main-white box-border text-base md:text-base max-[480px]:text-[13px] focus:outline-none focus:border-2 focus:border-transparent focus:shadow-[0_0_8px_#6d3b9c]"
             autofocus
           />
 
-          <label for="subject" class="text-main-white mb-1.5 font-medium text-base md:text-base max-[480px]:text-[13px]">Asunto</label>
+          <label
+            for="subject"
+            class="text-main-white mb-1.5 font-medium text-base md:text-base max-[480px]:text-[13px]"
+            >Asunto</label
+          >
           <input
-            type="email"
+            type="text"
             id="subject"
-            class="contact-input w-full p-3 md:p-3 max-[480px]:p-2.5 mt-1.5 mb-[15px] rounded border-2 border-primary bg-[#0a0522] text-main-white box-border text-base md:text-base max-[480px]:text-[13px] focus:outline-none focus:border-2 focus:border-transparent focus:shadow-[0_0_8px_#6d3b9c]"
+            class="contact-input w-full p-3 md:p-3 max-[480px]:p-2.5 mt-1.5 mb-[15px] rounded border-2 border-primary bg-hard-purple text-main-white box-border text-base md:text-base max-[480px]:text-[13px] focus:outline-none focus:border-2 focus:border-transparent focus:shadow-[0_0_8px_#6d3b9c]"
           />
 
-          <label for="text" class="text-main-white mb-1.5 font-medium text-base md:text-base max-[480px]:text-[13px]">Texto</label>
+          <label
+            for="text"
+            class="text-main-white mb-1.5 font-medium text-base md:text-base max-[480px]:text-[13px]"
+            >Texto</label
+          >
           <textarea
             name="text"
             id="text"
-            class="contact-input w-full h-[120px] max-w-full max-h-[150px] min-h-20 min-w-full resize-y p-3 md:p-3 max-[480px]:p-2.5 mt-1.5 mb-[15px] rounded border-2 border-primary bg-[#0a0522] text-main-white box-border text-base md:text-base max-[480px]:text-[13px] focus:outline-none focus:border-2 focus:border-transparent focus:shadow-[0_0_8px_#6d3b9c]"></textarea>
-          <button class="contact-button flex justify-center items-center gap-2 py-3 px-5 md:py-3 md:px-5 max-[480px]:py-2.5 max-[480px]:px-[15px] w-full bg-[#0a0522] border-2 border-primary mt-5 rounded text-[blueviolet] cursor-pointer transition-all duration-500 text-base md:text-base max-[480px]:text-[13px] font-semibold box-border hover:bg-[blueviolet] hover:text-main-white" type="submit">
+            class="contact-input w-full h-[120px] max-w-full max-h-[150px] min-h-20 min-w-full resize-y p-3 md:p-3 max-[480px]:p-2.5 mt-1.5 mb-[15px] rounded border-2 border-primary bg-hard-purple text-main-white box-border text-base md:text-base max-[480px]:text-[13px] focus:outline-none focus:border-2 focus:border-transparent focus:shadow-[0_0_8px_#6d3b9c]"
+          ></textarea>
+          <button
+            class="contact-button flex justify-center items-center gap-2 py-3 px-5 md:py-3 md:px-5 max-[480px]:py-2.5 max-[480px]:px-[15px] w-fullbg-hard-purple border-2 border-primary mt-5 rounded text-primary cursor-pointer transition-all duration-500 text-base md:text-base max-[480px]:text-[13px] font-semibold box-border hover:text-main-white"
+            type="submit"
+          >
             Enviar!
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +185,6 @@ const height = 20;
           </button>
         </form>
       </div>
-
     </main>
   </div>
 
