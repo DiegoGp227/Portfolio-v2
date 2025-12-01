@@ -12,18 +12,18 @@ const { src, title, text, link } = Astro.props;
     class="min-h-[115px] flex flex-col justify-between grow mt-2 max-[480px]:min-h-[100px]"
   >
     <div>
-      <h3 class="text-main-white text-base font-semibold my-2 mx-0 mt-2 mb-1">
+      <h3 class="text-main-white text-2xl font-semibold my-2 mx-0 mt-2 mb-1">
         {title}
       </h3>
       <p class="text-main-white text-sm leading-[1.4] mb-2 grow">
         {text}
       </p>
     </div>
-    <div>
+    <!-- <div>
       <button
         class="w-full py-2 px-[5px] bg-[#1f0031] border-2 border-primary rounded-[5px] transition-all duration-500 cursor-pointer text-sm hover:bg-primary hover:text-main-white"
         onclick={`location.href='${link}'`}>Link</button
       >
-    </div>
+    </div> -->
   </div>
 </div>
