@@ -8,19 +8,25 @@ import TecnologiesCoinMaster from "../../../Components/Projects/molecules/Tecnol
 
 <Layout>
   <div class="w-screen flex mt-10">
-    <div class="w-1/2 flex flex-col justify-center items-center p-3">
-      <InfoPage
-        title="CoinMaster"
-        text="Coin Master es una aplicación web que te ayuda a gestionar tus finanzas personales de manera sencilla y organizada. Te permite registrar ingresos, gastos, deudas y sueños, todo en un mismo lugar, ofreciéndote una visión clara de tu situación económica. Con su interfaz intuitiva y su enfoque estructurado, Coin Master te brinda control y claridad sobre tu dinero, ayudándote a tomar decisiones financieras más informadas."
-        linkPage="https://coinmaster.devdiego.work/"
-        linkGit="https://github.com/DiegoGp227/CoinMaster-v2"
-      />
-      <TecnologiesCoinMaster />
-    </div>
+    <div class="flex flex-col lg:flex-row items-center">
+      <div
+        class="w-screen flex flex-col justify-center items-center p-5 lg:w-1/2"
+      >
+        <InfoPage
+          title="CoinMaster"
+          text="Coin Master es una aplicación web que te ayuda a gestionar tus finanzas personales de manera sencilla y organizada. Te permite registrar ingresos, gastos, deudas y sueños, todo en un mismo lugar, ofreciéndote una visión clara de tu situación económica. Con su interfaz intuitiva y su enfoque estructurado, Coin Master te brinda control y claridad sobre tu dinero, ayudándote a tomar decisiones financieras más informadas."
+          linkPage="https://coinmaster.devdiego.work/"
+          linkGit="https://github.com/DiegoGp227/CoinMaster-v2"
+        />
+        <TecnologiesCoinMaster />
+      </div>
 
-    <div class="w-1/2 flex justify-center items-center flex-col">
-      <ImgDiv src="/Projects/CoinMaster.png" />
-      <FeaturesCoinMaster />
+      <div
+        class="w-full flex justify-center items-center flex-col p-5 lg:w-1/2"
+      >
+        <ImgDiv src="/Projects/CoinMaster.png" />
+        <FeaturesCoinMaster />
+      </div>
     </div>
   </div>
 </Layout>

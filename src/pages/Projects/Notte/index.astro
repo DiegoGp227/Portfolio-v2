@@ -8,19 +8,25 @@ import Layout from "../../Layout.astro";
 
 <Layout>
   <div class="w-screen flex mt-10">
-    <div class="w-1/2 flex flex-col justify-center items-center p-3">
-      <InfoPage
-        title="Notte"
-        text="Es una aplicación web sencilla e intuitiva para tomar, organizar y acceder a tus notas desde cualquier lugar. Pensada para quienes necesitan capturar ideas rápidamente, mantener apuntes ordenados o registrar información importante. Ofrece una experiencia fluida con funciones como creación, edición y eliminación de notas."
-        linkPage="https://github.com/devkaleth/notte"
-        linkGit="https://github.com/DiegoGp227/taskly-v2"
-      />
-      <TecnologiesNotte />
-    </div>
+    <div class="flex flex-col lg:flex-row items-center">
+      <div
+        class="w-screen flex flex-col justify-center items-center p-5 lg:w-1/2"
+      >
+        <InfoPage
+          title="Notte"
+          text="Es una aplicación web sencilla e intuitiva para tomar, organizar y acceder a tus notas desde cualquier lugar. Pensada para quienes necesitan capturar ideas rápidamente, mantener apuntes ordenados o registrar información importante. Ofrece una experiencia fluida con funciones como creación, edición y eliminación de notas."
+          linkPage="https://github.com/devkaleth/notte"
+          linkGit="https://github.com/DiegoGp227/taskly-v2"
+        />
+        <TecnologiesNotte />
+      </div>
 
-    <div class="w-1/2 flex justify-center items-center flex-col">
-      <ImgDiv src="/Assets/notte-home.jpeg" />
-      <FeaturesNotte />
+      <div
+        class="w-full flex justify-center items-center flex-col p-5 lg:w-1/2"
+      >
+        <ImgDiv src="/Assets/notte-home.jpeg" />
+        <FeaturesNotte />
+      </div>
     </div>
   </div>
 </Layout>

@@ -8,20 +8,26 @@ import TecnologiesServer from "../../../Components/Projects/molecules/Tecnologie
 
 <Layout>
   <div class="w-screen flex mt-10">
-    <div class="w-1/2 flex flex-col justify-center items-center p-3">
-      <InfoServePage
-        title="Server Autohosteado"
-        text="Este proyecto consiste en una infraestructura autohospedada montada sobre una Raspberry Pi 5, optimizada para alojar aplicaciones reales en producción mediante una arquitectura modular basada en Docker. Cada aplicación cuenta con su propio frontend, backend y base de datos en contenedores independientes, gestionados con Docker Compose. El sistema utiliza un túnel seguro administrado por Cloudflare, una IP fija para acceso remoto y está diseñado para operar con bajo consumo energético. Además, incorpora Integración Continua y Despliegue Continuo al actualizar la rama main, junto con notificaciones automáticas que informan del estado de cada despliegue, ofreciendo un entorno completamente automatizado, escalable y profesional."
-        linkPage="https://taskly.devdiego.work/login"
-        linkGit="https://github.com/DiegoGp227/taskly-v2"
-      />
-      <TecnologiesServer />
-    </div>
+    <div class="flex flex-col lg:flex-row items-center">
+      <div
+        class="w-screen flex flex-col justify-center items-center p-5 lg:w-1/2"
+      >
+        <InfoServePage
+          title="Server Autohosteado"
+          text="Este proyecto consiste en una infraestructura autohospedada montada sobre una Raspberry Pi 5, optimizada para alojar aplicaciones reales en producción mediante una arquitectura modular basada en Docker. Cada aplicación cuenta con su propio frontend, backend y base de datos en contenedores independientes, gestionados con Docker Compose. El sistema utiliza un túnel seguro administrado por Cloudflare, una IP fija para acceso remoto y está diseñado para operar con bajo consumo energético. Además, incorpora Integración Continua y Despliegue Continuo al actualizar la rama main, junto con notificaciones automáticas que informan del estado de cada despliegue, ofreciendo un entorno completamente automatizado, escalable y profesional."
+          linkPage="https://taskly.devdiego.work/login"
+          linkGit="https://github.com/DiegoGp227/taskly-v2"
+        />
+        <TecnologiesServer />
+      </div>
 
-    <div class="w-1/2 flex justify-center items-center flex-col">
-      <ImgDiv src="/Projects/serverCasero.jpg" />
+      <div
+        class="w-full flex justify-center items-center flex-col p-5 lg:w-1/2"
+      >
+        <ImgDiv src="/Projects/serverCasero.jpg" />
 
-      <FeaturesServer />
+        <FeaturesServer />
+      </div>
     </div>
   </div>
 </Layout>
