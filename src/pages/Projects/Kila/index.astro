@@ -1,0 +1,26 @@
+---
+import InfoPage from "../../../Components/Projects/molecules/InfoPage.astro";
+import FeaturesKila from "../../../Components/Projects/molecules/FeaturesKila.astro";
+import ImgDiv from "../../../Components/Projects/ImgDiv/ImgDiv.astro";
+import Layout from "../../Layout.astro";
+import TecnologiesKila from "../../../Components/Projects/molecules/TecnologiesKila.astro";
+---
+
+<Layout>
+  <div class="w-screen flex mt-10">
+    <div class="w-1/2 flex flex-col justify-center items-center p-3">
+      <InfoPage
+        title="Kila"
+        text="Validador de facturas es una herramienta web que te permite revisar y validar tus facturas electrónicas según los requisitos exigidos por la DIAN. La aplicación no solo detecta errores y advertencias en el JSON, sino que también guarda un historial de validaciones para que puedas consultar resultados anteriores. Con un dashboard interactivo, puedes visualizar de manera clara los errores, advertencias y estadísticas de tus facturas."
+        linkPage="https://kila.coinmaster.devdiego.work/"
+        linkGit="https://github.com/DiegoGp227/KILA"
+      />
+      <TecnologiesKila />
+    </div>
+
+    <div class="w-1/2 flex justify-center items-center flex-col">
+      <ImgDiv src="/Projects/Kila.png" />
+      <FeaturesKila />
+    </div>
+  </div>
+</Layout>
