@@ -6,14 +6,14 @@ import NetworksButtons from "../../Components/Home/NetworksButtons/index.astro";
 import DivGif from "../../Components/Home/DivGif/index.astro";
 ---
 
-<main class="w-screen h-auto flex items-start flex-row mt-10">
-  <div class="w-[50%] h-screen flex flex-col justify-center items-center gap-5 md:w-screen md:h-auto md:justify-center">
+<main class="w-full flex flex-col justify-center items-center mt-10 md:flex-row md:items-start">
+  <div class="w-auto md:w-1/2  md:h-screen flex flex-col justify-center items-center gap-5">
     <DivText />
     <DivTecnologies />
     <SubNav />
     <NetworksButtons />
   </div>
-  <div class="w-[50%] bg-hard-purple md:w-screen md:h-auto md:min-h-[40vh] md:justify-center">
+  <div class="w-full md:w-1/2 h-auto md:h-screen bg-hard-purple">
     <DivGif/>
   </div>
 </main>
