@@ -1,0 +1,26 @@
+---
+import InfoPage from "../../../Components/Projects/molecules/InfoPage.astro";
+import FeaturesCoinMaster from "../../../Components/Projects/molecules/FeaturesCoinMaster.astro";
+import ImgDiv from "../../../Components/Projects/ImgDiv/ImgDiv.astro";
+import Layout from "../../Layout.astro";
+import TecnologiesCoinMaster from "../../../Components/Projects/molecules/TecnologiesCoinMaster.astro";
+---
+
+<Layout>
+  <div class="w-screen flex mt-10">
+    <div class="w-1/2 flex flex-col justify-center items-center p-3">
+      <InfoPage
+        title="CoinMaster"
+        text="Coin Master es una aplicación web que te ayuda a gestionar tus finanzas personales de manera sencilla y organizada. Te permite registrar ingresos, gastos, deudas y sueños, todo en un mismo lugar, ofreciéndote una visión clara de tu situación económica. Con su interfaz intuitiva y su enfoque estructurado, Coin Master te brinda control y claridad sobre tu dinero, ayudándote a tomar decisiones financieras más informadas."
+        linkPage="https://coinmaster.devdiego.work/"
+        linkGit="https://github.com/DiegoGp227/CoinMaster-v2"
+      />
+      <TecnologiesCoinMaster />
+    </div>
+
+    <div class="w-1/2 flex justify-center items-center flex-col">
+      <ImgDiv src="/Projects/CoinMaster.png" />
+      <FeaturesCoinMaster />
+    </div>
+  </div>
+</Layout>
