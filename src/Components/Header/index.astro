@@ -1,11 +1,3 @@
----
-let isOpen = false;
-
-function toggleMenu() {
-  isOpen = !isOpen;
-}
----
-
 <header class="w-screen sticky top-0 left-0 h-[60px] flex justify-between items-center px-5 bg-transparent backdrop-blur-[10px] z-50">
   <!-- Logo / Nombre -->
   <a href="/" class="text-3xl text-main-white font-semibold transition-colors duration-300 hover:text-primary">
@@ -13,19 +5,20 @@ function toggleMenu() {
   </a>
 
   <!-- Botón hamburguesa en móviles -->
-  <button 
-    class="md:hidden flex flex-col justify-between w-6 h-6" 
-    on:click={toggleMenu}
+  <button
+    id="menu-toggle"
+    class="md:hidden flex flex-col justify-between w-6 h-6 z-50"
+    aria-label="Toggle menu"
   >
-    <span class="block w-full h-0.5 bg-main-white"></span>
-    <span class="block w-full h-0.5 bg-main-white"></span>
-    <span class="block w-full h-0.5 bg-main-white"></span>
+    <span class="block w-full h-0.5 bg-main-white transition-all duration-300"></span>
+    <span class="block w-full h-0.5 bg-main-white transition-all duration-300"></span>
+    <span class="block w-full h-0.5 bg-main-white transition-all duration-300"></span>
   </button>
 
   <!-- Menú de navegación -->
-  <nav 
+  <nav
     id="menu-movil"
-    class={`absolute top-[60px] left-0 w-full bg-hard-purple md:static md:w-auto md:flex transition-all duration-300 ${isOpen ? 'block' : 'hidden'} md:block`}
+    class="absolute top-[60px] left-0 w-full bg-hard-purple md:static md:w-auto md:flex transition-all duration-300 hidden md:block"
   >
     <ul class="flex flex-col md:flex-row m-0 p-0 md:gap-5">
       <li><a href="/" class="block text-main-white py-2 px-4 hover:text-primary">Inicio</a></li>
@@ -35,3 +28,14 @@ function toggleMenu() {
     </ul>
   </nav>
 </header>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menuMovil = document.getElementById('menu-movil');
+
+  if (menuToggle && menuMovil) {
+    menuToggle.addEventListener('click', () => {
+      menuMovil.classList.toggle('hidden');
+    });
+  }
+</script>
