@@ -2,7 +2,7 @@ services:
   portfolio:
     build: .
     ports:
-      - "5004:80" 
+      - "1000:80"
     volumes:
       - .:/app
     environment:
