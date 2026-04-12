@@ -1,0 +1,27 @@
+<div class="max-w-[500px] bg-[#181039] mt-8 rounded-md p-5">
+  <h3 class="text-primary text-4xl font-bold flex justify-center items-center">
+    Funcionalidades
+  </h3>
+
+  <ul class="text-[aliceblue] text-start mt-3 list-disc pl-6">
+    <li>Jerarquía de gestión: Project → Epic → Task</li>
+    <li>Seguimiento de progreso en tiempo real por proyecto y epic</li>
+    <li>Optimistic UI con rollback automático ante errores de API</li>
+    <li>Autenticación JWT con verificación de ownership en cada mutación</li>
+    <li>Validación full-stack: Zod en backend, React Hook Form en frontend</li>
+    <li>Stats de tareas sin queries N+1 (COUNT + FILTER en una sola query)</li>
+    <li>Cascade automático al eliminar proyectos (Epics → Tasks → Criterios)</li>
+    <li>Manejo estructurado de errores con clases tipadas y JSON consistente</li>
+    <li>Arquitectura limpia: Route → Controller → Service → Prisma</li>
+  </ul>
+
+  <!-- CONTENEDOR CENTRADO -->
+  <div class="flex justify-center mt-3">
+    <div
+      class="flex items-center gap-2 py-2 px-4 bg-hard-purple border border-primary rounded-full w-fit"
+    >
+      <p class="text-main-white text-sm font-medium">Estado:</p>
+      <span class="text-yellow-400 text-sm font-semibold">Beta / MVP</span>
+    </div>
+  </div>
+</div>

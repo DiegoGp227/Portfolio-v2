@@ -1,0 +1,32 @@
+---
+import InfoPage from "../../../Components/Projects/molecules/InfoPage.astro";
+import FeaturesSkemap from "../../../Components/Projects/molecules/FeaturesSkemap.astro";
+import ImgDiv from "../../../Components/Projects/ImgDiv/ImgDiv.astro";
+import TecnologiesSkemap from "../../../Components/Projects/molecules/TecnologiesSkemap.astro";
+import Layout from "../../Layout.astro";
+---
+
+<Layout>
+  <div class="w-screen flex mt-10">
+    <div class="flex flex-col lg:flex-row items-center">
+      <div
+        class="w-screen flex flex-col justify-center items-center p-5 lg:w-1/2"
+      >
+        <InfoPage
+          title="Skemap"
+          text="Herramienta full-stack de gestión de proyectos con jerarquía Project → Epic → Task. Incluye seguimiento de progreso en tiempo real, actualizaciones optimistas con rollback automático, autenticación JWT con ownership check y validación en todas las capas de la aplicación."
+          linkPage="https://skemap.devdiego.work/"
+          linkGit="https://github.com/DiegoGp227/skemap"
+        />
+        <TecnologiesSkemap />
+      </div>
+
+      <div
+        class="w-full flex justify-center items-center flex-col p-5 lg:w-1/2"
+      >
+        <ImgDiv src="/Projects/skemap.png" />
+        <FeaturesSkemap />
+      </div>
+    </div>
+  </div>
+</Layout>
